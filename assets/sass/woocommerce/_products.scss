@@ -1,0 +1,259 @@
+.woocommerce ul.products {
+	border-top: 1px solid rgba(#000, .04);
+	margin-top: 30px;
+	padding-top: 30px;
+	
+	li.product {
+		@media (min-width: $tablet) {
+			@include span(4 of 12);
+
+			&:nth-child(3n) {
+				@include last();
+			}
+		}
+
+		@media (max-width: $tablet) {
+			width: 100%;
+		}
+	}
+
+	li.product {
+		border-bottom: 1px solid rgba(#000, .04);
+		clear: none;
+		margin-bottom: 45px;
+		padding-bottom: 45px;
+
+		.product-image-wrapper {
+			background-color: $color-black;
+			border-radius: 3px;
+			overflow: hidden;
+		}
+
+		.product-location {
+			font-size: 11px;
+			font-weight: 700;
+			margin: -5px 0 20px 0;
+			min-height: 15px;
+			text-transform: uppercase;
+
+			a {
+				color: $color-black-light;
+			}  
+
+			.separator {
+				color: $color-black-light;				 
+				font-weight: 400;
+				margin: 0 5px;
+			}
+		}
+
+		.product-rating {
+			color: $color-primary;
+			font-size: 17px;
+			margin: 15px 0 0 0;
+
+			.fa {
+				margin: 0 2px 0 0;
+			}
+		}
+
+		.event-countdown {
+			background-color: rgba(#000, .3);
+			color: #fff;
+			font-size: 13px;
+			font-weight: 700;
+			padding: 5px 15px;
+			position: absolute;
+			right: 15px;
+			top: 15px;
+		}
+
+		.price {
+			background-color: rgba(#000, .3);
+			color: #fff;
+			font-size: 13px;
+			left: 15px;
+			font-weight: 700;
+			padding: 5px 15px;
+			position: absolute;
+			top: 15px;
+		}
+
+		h3 {
+			color: $color-black;
+			display: block;
+			font-size: 22px;
+			font-weight: 600;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		p {
+			color: rgba($color-black, .7);
+			font-size: 14px;
+			line-height: 1.7;
+			margin: 0;
+		}
+
+		img {
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			display: block;
+			margin: 0 !important;
+			opacity: .85;
+			transition: all .6s ease;
+		}
+
+		&:hover { 
+			img {
+				opacity: .95;
+				transform: scale(1.04) translate3d(0, 0, 0);
+			}
+		}
+	}
+}
+
+.woocommerce div.product .product_title {
+	border-bottom: 0;
+	font-size: 32px;
+	font-weight: 400;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.woocommerce .star-rating {
+	width: 100px;
+}
+
+.woocommerce-review-link {
+	color: $color-black-light;
+	font-size: 12px;
+}
+
+.woocommerce .woocommerce-product-rating .star-rating {
+	color: $color-primary;
+	letter-spacing: 3px;
+}
+
+.woocommerce div.product p.price {
+	border-bottom: 1px solid #f4f4f4;
+	color: $color-gray;
+	font-size: 24px;
+	padding: 14px 0;
+}
+
+.product_meta {
+	a {
+		color: $color-black-light;
+	}
+
+	span {
+		display: block;
+		padding: 5px 0;
+	}
+
+	.posted_in {
+		display: block;
+	}
+
+	.tagged_as {
+		display: block;
+	}
+}
+
+.woocommerce .woocommerce-product-actions {
+	position: absolute;
+	right: 50px;
+	top: -50px;
+	white-space: nowrap;
+
+	div {
+		display: inline-block;
+		margin: 0 0 0 20px;
+	}
+
+	.button {
+		background-color: transparent;
+		border: 1px solid rgba(255, 255, 255, .08);
+		font-size: 13px;
+		font-weight: normal;
+		height: auto;
+		line-height: 1;
+		padding: 9px 15px;
+
+		&:hover {
+			background-color: rgba(255, 255, 255, .08);
+		}
+	}
+}
+
+.products.related {
+	margin-bottom: -90px;
+	position: relative;
+
+	.products {
+		margin: 0;
+	}
+}
+
+.product-return-back {
+	font-size: 24px;
+	float: right;
+	margin-top: -68px;
+
+	a {
+		color: $color-gray-lighter;
+
+		&:hover {
+			color: $color-gray;
+		}
+	}
+}
+
+.listing-manager-share {
+	list-style: none;
+	margin: 20px 0 0 0;
+	padding: 0;
+
+	li {
+		display: inline-block;
+	}
+
+	a {		
+		background-color: #f4f4f4;
+		border-radius: 50%;
+		color: $color-black-light;
+		display: block;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 15px 0 0;
+		text-align: center;
+		transition: background-color .2s ease;
+		width: 36px;
+
+		&:hover {
+			background-color: darken(#f4f4f4, 3%);
+		}
+
+		&.mail {
+			background-color: $color-primary;
+			color: #fff;
+		}
+
+		&.facebook {
+			background-color: $color-facebook;
+			color: #fff;
+		}
+
+		&.google-plus {
+			background-color: $color-google-plus;
+			color: #fff;
+		}		
+
+		&.twitter {
+			background-color: $color-twitter;
+			color: #fff;
+		}		
+	}
+}

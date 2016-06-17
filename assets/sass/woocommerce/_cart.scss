@@ -1,0 +1,128 @@
+.shop_table.shop_table_responsive.cart {
+    @include span(8 of 12);
+    border: 0;
+    margin-bottom: 80px;
+}
+
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals {
+    @include span(4 of 12);
+    @include last();
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    float: none;
+    width: 100%;
+
+    h2 {
+        display: none;
+    }
+
+    table {
+        border: 1px solid #f4f4f4;
+        border-radius: 0;
+
+        th, td {
+            background-color: transparent;
+            border-color: #f4f4f4;
+            padding-bottom: 34px;
+            padding-top: 34px;
+            vertical-align: middle;
+        }
+    }
+}
+
+/**
+ * Table heading
+ */
+.woocommerce-cart table.cart th {
+    background-color: transparent;
+    border-top: 1px solid #f4f4f4;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    text-transform: inherit;
+}
+
+/**
+ * Table cell
+ */
+.woocommerce table.shop_table td {
+    border-bottom: 0;
+    border-top: 1px solid #f4f4f4;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    &.product-name {
+        font-weight: 700;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+    &.product-thumbnail {
+        img {
+            width: 60px;
+        }
+    }
+}
+
+/**
+ * Table bottom actions wrapper
+ */
+.woocommerce-page table.cart td.actions {
+    padding: 20px 0;
+}
+
+/**
+ * Coupon input
+ */
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    font-size: 13px;
+    height: 37px;
+    width: 200px;
+}
+
+/**
+ * Table buttons
+ */
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    @extend .button;
+    color: #fff;
+    float: right;
+    font-size: 13px !important;
+    height: auto !important;
+    line-height: 1 !important;
+    padding: 12px 25px !important;
+    width: auto;
+}
+
+/**
+ * Proceed to checkout
+ */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+    @extend .button-primary;
+    font-size: 13px;
+    font-weight: 700;
+    height: auto;
+    line-height: 1;
+    padding: 13px 0 12px 0;
+}
+
+.woocommerce-checkout-review-order-table {
+    border: 0;
+}
+
+.woocommerce table.shop_table {
+    border: 0;
+
+    th, td {
+        background-color: transparent;
+        border-color: #f4f4f4 !important;
+    }
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    @extend .button-primary;
+}

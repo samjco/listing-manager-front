@@ -1,0 +1,22 @@
+.woocommerce-breadcrumb {
+	color: rgba(#fff, .7) !important;
+	font-size: 13px;
+	left: 50px;
+	position: absolute;
+	top: -44px;
+
+	a {
+		color: rgba(#fff, .7) !important;		
+		text-decoration: none;
+	}
+
+	.separator {
+		margin: 0 15px;
+	}
+
+	@media (max-width: $tablet) {
+		.single-product & {
+			display: none;
+		}
+	}
+}

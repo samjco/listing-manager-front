@@ -1,0 +1,273 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Listing Manager Front\n"
+"POT-Creation-Date: 2016-05-18 14:03+0200\n"
+"PO-Revision-Date: 2016-05-18 13:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-KeywordsList: __;esc_html__;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: fabfile.py\n"
+"X-Poedit-SearchPathExcluded-2: gulpfile.js\n"
+"X-Poedit-SearchPathExcluded-3: assets\n"
+
+#: functions.php:49 functions.php:138
+msgid "Primary"
+msgstr ""
+
+#: functions.php:50
+msgid "Content Top"
+msgstr ""
+
+#: functions.php:51
+msgid "Front Page"
+msgstr ""
+
+#: functions.php:52
+msgid "Product"
+msgstr ""
+
+#: functions.php:53
+msgid "Sidenav"
+msgstr ""
+
+#: functions.php:54
+msgid "Footer Left "
+msgstr ""
+
+#: functions.php:55
+msgid "Footer Right "
+msgstr ""
+
+#: functions.php:139
+msgid "Authenticated"
+msgstr ""
+
+#: page-promo-page.php:17
+msgid "Create Exceptional Directory Solutions In WordPress &amp; WooCommerce"
+msgstr ""
+
+#: page-promo-page.php:22
+msgid "Listing Manager plugin provides easy way how to create directory website on the top of the e-commerce platform WooCommerce and easily monetize your business."
+msgstr ""
+
+#: page-promo-page.php:27
+msgid "Show Listings"
+msgstr ""
+
+#: page-promo-page.php:31
+msgid "Purchase"
+msgstr ""
+
+#: page-promo-page.php:48
+msgid "Core Features"
+msgstr ""
+
+#: page-promo-page.php:49
+msgid "Listing Manager Front"
+msgstr ""
+
+#: page-promo-page.php:50
+msgid "Download Theme"
+msgstr ""
+
+#: page-promo-page.php:51
+msgid "FAQ"
+msgstr ""
+
+#: page-promo-page.php:61
+msgid "Listing Manager Features"
+msgstr ""
+
+#: page-promo-page.php:64
+msgid "Check the main features which makes Listing Manager plugin standing out of the crowd"
+msgstr ""
+
+#: page-promo-page.php:71
+msgid "Based on WooCommerce"
+msgstr ""
+
+#: page-promo-page.php:74
+msgid "Listing Manager is completely build upon the WooCommerce plugin."
+msgstr ""
+
+#: page-promo-page.php:81
+msgid "Packages & WooCommerce Payments"
+msgstr ""
+
+#: page-promo-page.php:84
+msgid "Using the native WooCommerce payment gateways to purchase listing packages."
+msgstr ""
+
+#: page-promo-page.php:91
+msgid "Front End Submission"
+msgstr ""
+
+#: page-promo-page.php:94
+msgid "Allows users to submit the listings from the front end without admin access."
+msgstr ""
+
+#: page-promo-page.php:101
+msgid "Google Maps"
+msgstr ""
+
+#: page-promo-page.php:104
+msgid "Support for displaying submitted listings in directory on the Google Map."
+msgstr ""
+
+#: page-promo-page.php:111
+msgid "Inquire Form"
+msgstr ""
+
+#: page-promo-page.php:114
+msgid "Quick form allowing users to contact listing owner from your directory website."
+msgstr ""
+
+#: page-promo-page.php:121
+msgid "Favorite Listings"
+msgstr ""
+
+#: page-promo-page.php:124
+msgid "Functionality for authenticated users to collect their favorite listings."
+msgstr ""
+
+#: page-promo-page.php:131
+msgid "Claim Listing"
+msgstr ""
+
+#: page-promo-page.php:134
+msgid "Allows users to easily claim their listing from the front end with required admin approval."
+msgstr ""
+
+#: page-promo-page.php:141
+msgid "Report Listing"
+msgstr ""
+
+#: page-promo-page.php:144
+msgid "Quickly find listings which are breaking your directory terms and conditions."
+msgstr ""
+
+#: page-promo-page.php:151
+msgid "Locations &amp; Amenities"
+msgstr ""
+
+#: page-promo-page.php:154
+msgid "Custom taxonomies implementation for better directory listings classification."
+msgstr ""
+
+#: page-promo-page.php:162
+msgid "Do you have any troubles with plugin?"
+msgstr ""
+
+#: page-promo-page.php:167
+msgid "Get In Touch"
+msgstr ""
+
+#: page-promo-page.php:178
+msgid "Listing Manager Front Theme"
+msgstr ""
+
+#: page-promo-page.php:181
+msgid "To bring the best directory user experience Listing Manager is incorporated in Listing Manager Front WordPress Theme which is available for all customers."
+msgstr ""
+
+#: page-promo-page.php:192
+msgid "Clean &amp; Beautiful Listings"
+msgstr ""
+
+#: page-promo-page.php:195
+msgid "Beautifully crafted listings archive page to bring best user experience. For the listings page is used standard WooCommerce shop page with the proper styling."
+msgstr ""
+
+#: page-promo-page.php:204
+msgid "Easily Understandable Packages"
+msgstr ""
+
+#: page-promo-page.php:207
+msgid "Offer users simple packages. These packages are still WooCommerce products which can be purchased through WooCommerce checkout so you can use all WooCommerce payment gateways."
+msgstr ""
+
+#: page-promo-page.php:224
+msgid "Full Featured Listing Details"
+msgstr ""
+
+#: page-promo-page.php:227
+msgid "WooCommerce product detail pages are extended to show all required information about the listing. Did you purchased other WooCommerce product? No problem at all. It should be working as expected. "
+msgstr ""
+
+#: page-promo-page.php:241
+msgid "Subscribe and get a copy of Listing Manager Front. Theme specially made for directory &amp; listings."
+msgstr ""
+
+#: page-promo-page.php:245
+msgid "* We promise that we will not send you spam."
+msgstr ""
+
+#: page-promo-page.php:255
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: page-promo-page.php:261
+msgid "Is Listing Manager compatible with WooCommerce?"
+msgstr ""
+
+#: page-promo-page.php:264
+msgid "Yes, Listing Manager is completely build upon the WooCommerce plugin. You will create new listings in the exact same way how you created the product but you will just change the product type to \"Listing\"."
+msgstr ""
+
+#: page-promo-page.php:269
+msgid "Does Listing Manager support front end submission?"
+msgstr ""
+
+#: page-promo-page.php:272
+msgid "Plugin is incorporating basic front end submission system but adding new front end field requires some coding skills. You can of course use third party plugins for adding new listings from the front end."
+msgstr ""
+
+#: page-promo-page.php:277
+msgid "How the package system works?"
+msgstr ""
+
+#: page-promo-page.php:280
+msgid "Plugin creates new product type obviously called \"Package\". This product type defines new special package fields which are used in submission system."
+msgstr ""
+
+#: page-promo-page.php:285
+msgid "Which payment gateways are supported?"
+msgstr ""
+
+#: page-promo-page.php:288
+msgid "For purchasing the package plugin is using standard WooCommerce checkout so all payment gateways which are supported in WooCommerce will be working."
+msgstr ""
+
+#: page-promo-page.php:297
+msgid "Created by Code Vision. All rights reserved."
+msgstr ""
+
+#: page-simple.php:14
+msgid "Return Back"
+msgstr ""
+
+#: templates/inquire-form.php:2
+msgid "Contact Listing Owner"
+msgstr ""
+
+#: templates/page-title.php:7
+msgid "Search Results"
+msgstr ""
+
+#: templates/page-title.php:26
+msgid "Search for"
+msgstr ""
+
+#: templates/page-title.php:30
+msgid "Recent news from"
+msgstr ""

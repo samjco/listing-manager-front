@@ -1,0 +1,88 @@
+.page-wrapper {
+	display: table;
+	height: 100%;
+	overflow-x: hidden;
+	table-layout: fixed;
+	width: 100%;		
+
+	.admin-bar & {
+		border-top: 32px solid transparent;
+
+		@media (max-width: 782px) {
+			border-top-width: 46px;
+		}
+	}
+}
+
+.header-wrapper, .main-wrapper, .footer-wrapper {
+	display: table-row;
+}
+
+.header-wrapper, .footer-wrapper {
+	height: 1px;
+}
+
+.main {		
+	@include container($width-page);
+	background-color: #fff;
+	box-shadow: 0 0 20px rgba(#000, .1);
+	border-radius: 3px 3px;
+	display: table;
+	height: calc(100% + 170px);
+	margin-bottom: -70px;
+	margin-top: -100px;	
+	position: relative;
+	width: 100%
+}
+
+.main-inner {
+	padding: 50px;
+
+	@media (max-width: $tablet) {
+		padding: 30px;
+	}
+}
+
+.has-sidebar {
+	.content {
+		@include span(9 of 12);
+	}
+
+	.sidebar {
+		@include span(3 of 12);
+		@include last();
+	}
+}
+
+.main-simple-wrapper {
+	@include container($width-page);
+
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%
+}
+
+.main-simple {
+	@include span(4 of 10);
+	@include push(3 of 10);
+
+	h1 {
+		color: #fff;
+		text-align: center;
+	}
+
+	form {
+		button {
+			@extend .button-primary;
+			float: right;
+		}
+	}
+
+	a {
+		border-bottom: 1px solid rgba(#fff, .3);
+		color: #fff;
+		padding-bottom: 3px;
+	}
+}
