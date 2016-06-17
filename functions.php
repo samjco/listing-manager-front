@@ -35,6 +35,10 @@ function listing_manager_front_enqueue() {
 	if ( is_singular() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	if ( ! isset( $content_width ) ) {
+		$content_width = 1170;
+	}
 }
 add_action( 'wp_enqueue_scripts', 'listing_manager_front_enqueue' );
 
@@ -65,6 +69,20 @@ function listing_manager_front_sidebars() {
 	}	
 }
 add_action( 'widgets_init', 'listing_manager_front_sidebars' );
+
+/**
+ * Comments template
+ *
+ * @param string $comment Comment message.
+ * @param array  $args Arguments.
+ * @param int    $depth Depth.
+ * @return void
+ */
+function listing_manager_front_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	extract( $args, EXTR_SKIP );
+	include get_template_directory() . '/templates/content-comment.php';
+}
 
 /**
  * Body classes
