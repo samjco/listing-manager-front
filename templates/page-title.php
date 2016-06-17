@@ -4,7 +4,7 @@
 	<div class="page-title">
 		<div class="page-title-inner">
 			<?php if ( is_search() ) : ?>
-				<h1><?php echo esc_html__( 'Search Results', 'listing-manager' ); ?></h1>
+				<h1><?php echo esc_html__( 'Search Results', 'listing-manager-front' ); ?></h1>
 			<?php elseif ( class_exists( 'WooCommerce' ) && is_shop() ) : ?>
 				<h1><?php echo woocommerce_page_title(); ?></h1>
 

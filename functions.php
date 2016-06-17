@@ -125,7 +125,7 @@ add_action( 'after_setup_theme', 'listing_manager_front_enable_shortcodes_in_tex
  * @return void
  */
 function listing_manager_front_load_textdomain() {
-	load_theme_textdomain( 'listing-manager', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'listing-manager-front', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'listing_manager_front_after_theme_setup' );
 
@@ -136,8 +136,8 @@ add_action( 'after_setup_theme', 'listing_manager_front_after_theme_setup' );
  * @return void
  */
 function listing_manager_front_menu() {
-	register_nav_menu( 'primary', esc_html__( 'Primary', 'listing-manager' ) );
-	register_nav_menu( 'authenticated', esc_html__( 'Authenticated', 'listing-manager' ) );
+	register_nav_menu( 'primary', esc_html__( 'Primary', 'listing-manager-front' ) );
+	register_nav_menu( 'authenticated', esc_html__( 'Authenticated', 'listing-manager-front' ) );
 }
 add_action( 'init', 'listing_manager_front_menu' );
 
