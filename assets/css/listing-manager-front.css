@@ -392,7 +392,6 @@ th {
   border-radius: 3px 3px;
   display: table;
   height: calc(100% + 100px);
-  margin-bottom: -70px;
   margin-top: -100px;
   position: relative;
   width: 100%; }
@@ -1482,8 +1481,7 @@ form.listing-manager-submission-form fieldset legend {
     clear: both; }
 
 .footer-inner {
-  color: rgba(255, 255, 255, 0.7);
-  margin-top: 95px; }
+  color: rgba(255, 255, 255, 0.7); }
   .footer-inner:after {
     content: " ";
     display: block;
