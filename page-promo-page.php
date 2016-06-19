@@ -24,7 +24,7 @@ get_header(); ?>
 
 			<div class="buttons">
 				<a href="http://github.com/wearecodevision/listing-manager-front" class="button button-primary">
-					<?php echo esc_html__( 'Get Theme from GitHub', 'listing-manager-front' ); ?>
+					<?php echo esc_html__( 'Download Theme', 'listing-manager-front' ); ?>
 				</a><!-- /.button -->
 
 				<a href="https://codecanyon.net/item/listing-manager-directory-listings-for-woocommerce/16250019?ref=codevisionthemes" class="button button-white">
