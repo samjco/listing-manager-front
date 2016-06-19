@@ -1645,7 +1645,7 @@ form.listing-manager-submission-form fieldset legend {
         .hero-wrapper .buttons .button, .hero-wrapper .buttons .woocommerce .cart input.button, .woocommerce .cart .hero-wrapper .buttons input.button, .hero-wrapper .buttons .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .hero-wrapper .buttons input {
           margin-bottom: 20px; } }
   .hero-wrapper .button, .hero-wrapper .woocommerce .cart .button, .woocommerce .cart .hero-wrapper .button, .hero-wrapper .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .hero-wrapper input {
-    width: 110px; }
+    min-width: 110px; }
   .hero-wrapper:after {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.08), transparent);
     bottom: 0;
