@@ -4,6 +4,8 @@
 
 .footer {
     @include container($width-page);
+    padding-bottom: 30px;
+    padding-top: 30px;    
 }
 
 .footer-inner {
