@@ -1,7 +1,9 @@
 .hero-wrapper {
-	background-color: $color-hero-background;
-	background-image: linear-gradient(to right, #2A2F35, #444D59);	
+	background-color: $color-hero-background;		
 	height: calc(100vh - 83px - 60px);
+	padding-left: 1000px;
+	padding-right: 1000px;
+	margin: -50px -1000px 0 -1000px;
 	min-height: 800px; 
 	position: relative;
 	overflow: hidden;
@@ -53,10 +55,10 @@
 	position: absolute;
 	top: 50%;
 	transform: translateX(-50%) translateY(calc(-50% - 140px));
-	width: 80%;
+	
 
 	@media (min-width: $largedesktop) {
-		width: 50%;
+		width: $largedesktop;
 	}
 
 	@media (max-width: $tablet) {

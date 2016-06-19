@@ -322,11 +322,22 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woo
  */
 function listing_manager_front_product_loop_thumbnail( ) {
     global $post, $woocommerce;
+
+    $default = '<img src="' . get_template_directory_uri() . '/assets/img/placeholder.jpg" alt="' . $post->post_title . '">';
     $output = '<div class="product-image-wrapper">';
 
     if ( has_post_thumbnail() ) {
-        $output .= get_the_post_thumbnail( $post->ID, 'shop_catalog' );
-    }                       
+    	$image= get_the_post_thumbnail( $post->ID, 'shop_catalog' );
+
+    	if ( empty( $image ) ) {
+    		$output .= $default;
+    	} else {
+			$output .= $image;
+    	}        
+    } else {
+    	$output .= $default;
+    }
+
     $output .= '</div>';
     echo $output;
 }

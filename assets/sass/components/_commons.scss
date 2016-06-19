@@ -34,7 +34,7 @@
 }
 
 .block {
-	@include container($width-page);
+	@include container($width-page); 
 
 	padding-left: 50px;
 	padding-right: 50px;
@@ -416,5 +416,19 @@
 		.fa {
 			margin-left: 10px;
 		}
+	}
+}
+
+.content-box {
+	background-color: #fff;
+	padding: 25px;
+
+	h3.widget-title {
+		font-size: 14px;
+		white-space: nowrap;
+	}
+
+	p {
+		margin: 0;
 	}
 }
