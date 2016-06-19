@@ -391,7 +391,7 @@ th {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 3px 3px;
   display: table;
-  height: calc(100% + 170px);
+  height: calc(100% + 100px);
   margin-bottom: -70px;
   margin-top: -100px;
   position: relative;
@@ -1470,8 +1470,7 @@ form.listing-manager-submission-form fieldset legend {
     vertical-align: 1px; }
 
 .footer-wrapper {
-  background-image: linear-gradient(to right, #2A2F35, #444D59);
-  height: 140px; }
+  background-image: linear-gradient(to right, #2A2F35, #444D59); }
 
 .footer {
   max-width: 1170px;
