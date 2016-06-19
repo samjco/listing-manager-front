@@ -399,6 +399,11 @@ th {
     content: " ";
     display: block;
     clear: both; }
+  .page-template-page-front-page .main {
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    margin-top: auto; }
 
 .main-inner {
   padding: 50px; }

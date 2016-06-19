@@ -23,8 +23,8 @@ get_header(); ?>
 			</p>
 
 			<div class="buttons">
-				<a href="<?php echo get_permalink( wc_get_page_id( 'shop' ) )?>" class="button button-primary">
-					<?php echo esc_html__( 'Show Listings', 'listing-manager-front' ); ?>
+				<a href="http://github.com/wearecodevision/listing-manager-front" class="button button-primary">
+					<?php echo esc_html__( 'Get Theme from GitHub', 'listing-manager-front' ); ?>
 				</a><!-- /.button -->
 
 				<a href="https://codecanyon.net/item/listing-manager-directory-listings-for-woocommerce/16250019?ref=codevisionthemes" class="button button-white">

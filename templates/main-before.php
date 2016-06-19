@@ -1,6 +1,6 @@
 <div class="main-wrapper">	
 	<div class="main">
-		<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+		<?php if ( ! is_page_template( 'page-front-page.php') && class_exists( 'WooCommerce' ) ) : ?>
 			<?php woocommerce_breadcrumb(); ?>
 		<?php endif; ?>
 
@@ -11,7 +11,9 @@
 		<?php endif; ?>
 
 		<div class="main-inner">
-			<?php get_template_part( 'templates/page-title' ); ?>
+			<?php if ( ! is_page_template( 'page-front-page.php') ) : ?>
+				<?php get_template_part( 'templates/page-title' ); ?>
+			<?php endif; ?>
 
 			<?php if ( is_active_sidebar( 'content-top' ) ) : ?>
 				<?php dynamic_sidebar( 'content-top' ); ?>

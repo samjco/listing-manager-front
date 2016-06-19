@@ -52,9 +52,7 @@ function listing_manager_front_sidebars() {
 	$sidebars = array(
 		'sidebar-1' 			=> esc_html__( 'Primary', 'listing-manager-front' ),
 		'content-top' 			=> esc_html__( 'Content Top', 'listing-manager-front' ),
-		'front' 				=> esc_html__( 'Front Page', 'listing-manager-front' ),
 		'product' 				=> esc_html__( 'Product', 'listing-manager-front' ),
-		'sidenav'				=> esc_html__( 'Sidenav', 'listing-manager-front' ),
 		'footer-left' 		    => esc_html__( 'Footer Left ', 'listing-manager-front' ),
 		'footer-right' 		    => esc_html__( 'Footer Right ', 'listing-manager-front' ),
 	);
@@ -177,7 +175,7 @@ add_action( 'get_header', 'listing_manager_front_disable_admin_bar_top_margin' )
  * @return void
  */
 function listing_manager_front_add_main_before() {
-	if ( is_page_template( 'page-front-page.php') || is_page_template( 'page-promo-page.php') ) {
+	if ( is_page_template( 'page-promo-page.php') ) {
 		return;
 	}
 
@@ -192,7 +190,7 @@ add_action( 'listing_manager_front_before_main', 'listing_manager_front_add_main
  * @return void
  */
 function listing_manager_front_add_main_after() {
-	if ( is_page_template( 'page-front-page.php') || is_page_template( 'page-promo-page.php') ) {
+	if ( is_page_template( 'page-promo-page.php') ) {
 		return;
 	}
 

@@ -31,7 +31,14 @@
 	height: calc(100% + 100px);
 	margin-top: -100px;	
 	position: relative;
-	width: 100%
+	width: 100%;
+
+	.page-template-page-front-page & { 
+		background-color: transparent;
+		box-shadow: none;
+		height: auto;
+		margin-top: auto;
+	}
 }
 
 .main-inner {
