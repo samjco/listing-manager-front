@@ -410,6 +410,9 @@ th {
   @media (max-width: 48em) {
     .main-inner {
       padding: 30px; } }
+  .page-template-page-front-page .main-inner {
+    padding-left: 0;
+    padding-right: 0; }
 
 .has-sidebar .content {
   width: 74.39024%;
