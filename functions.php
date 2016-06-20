@@ -321,7 +321,9 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woo
  * @return void
  */
 function listing_manager_front_woocommerce_loop_add_favorite() {
-	Listing_Manager_Favorites::render_button( get_the_ID() );
+	if ( has_term( 'listing', 'product_type' ) ) {
+		Listing_Manager_Favorites::render_button( get_the_ID() );
+	}	
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woocommerce_loop_add_favorite' );
 
