@@ -35,6 +35,7 @@ function listing_manager_front_enqueue() {
 	wp_enqueue_style( 'listing-manager-front', get_template_directory_uri() . '/assets/css/listing-manager-front.css' );
 
 	wp_enqueue_script( 'listing-manager-front', get_template_directory_uri() . '/assets/js/listing-manager-front.js', array( 'jquery' ) );
+	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/assets/js/masonry.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.min.js', array( 'jquery' ) );
 
 	if ( is_singular() ) {
@@ -161,6 +162,37 @@ function listing_manager_front_menu() {
 	register_nav_menu( 'authenticated', esc_html__( 'Authenticated', 'listing-manager-front' ) );
 }
 add_action( 'init', 'listing_manager_front_menu' );
+
+/**
+ * Custom excerpt length
+ *
+ * @param int $length String length.
+ * @filter excerpt_length
+ * @return int
+ */
+function listing_manager_front_excerpt_length( $length ) {
+	global $post;
+
+	if ( $post->post_type == 'post' ) {
+		return 20;
+	} 
+
+	return $length;
+}
+add_filter( 'excerpt_length', 'listing_manager_front_excerpt_length' );
+
+/**
+ * Custom read more
+ *
+ * @param string $more Read more string.
+ * @filter excerpt_more
+ * @return string
+ */
+function listing_manager_front_excerpt_more( $more ) {
+	return '<a href="' . get_the_permalink(). '" class="button button-primary read-more">' . esc_html__( 'Read More', 'listing-manager-front' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'listing_manager_front_excerpt_more' );
+
 
 /**
  * Disable admin's bar top margin

@@ -1,0 +1,53 @@
+.blog .posts .type-post {
+	width: 31%;
+}
+
+.type-post {
+	margin-bottom: 30px;
+	position: relative;	
+
+	p {
+		color: rgba($color-black, .7);
+		font-size: 14px;
+		line-height: 28px;
+	}	
+
+	.post-thumbnail {
+		margin: 0 0 15px 0;
+
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.post-title {
+		h3 {
+			margin: 0;
+			padding: 0;
+		}
+
+		h4 {
+			color: $color-gray;
+			font-size: 13px;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			color: $color-black;
+			font-size: 16px;
+			font-weight: 600;
+		}
+	}
+
+	.post-content {
+		.read-more {
+			font-size: 13px;
+			height: 36px;
+			line-height: 36px;
+			margin: 10px 0 0 0;
+			padding: 0px 18px;
+		}
+	}
+}

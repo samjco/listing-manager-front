@@ -1,6 +1,11 @@
 jQuery(document).ready(function($) {
     'use strict';
 
+    $('.blog .posts').masonry({
+        itemSelector: '.type-post',
+        gutter: 30
+    });
+
     /**
      * Hero animate
      */

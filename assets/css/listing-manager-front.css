@@ -2181,6 +2181,40 @@ form.listing-manager-submission-form fieldset legend {
       background-color: #1769ff;
       content: '\f1b4'; }
 
+.blog .posts .type-post {
+  width: 31%; }
+
+.type-post {
+  margin-bottom: 30px;
+  position: relative; }
+  .type-post p {
+    color: rgba(37, 37, 37, 0.7);
+    font-size: 14px;
+    line-height: 28px; }
+  .type-post .post-thumbnail {
+    margin: 0 0 15px 0; }
+    .type-post .post-thumbnail img {
+      height: auto;
+      width: 100%; }
+  .type-post .post-title h3 {
+    margin: 0;
+    padding: 0; }
+  .type-post .post-title h4 {
+    color: #B7B7B7;
+    font-size: 13px;
+    margin: 0;
+    padding: 0; }
+  .type-post .post-title a {
+    color: #252525;
+    font-size: 16px;
+    font-weight: 600; }
+  .type-post .post-content .read-more {
+    font-size: 13px;
+    height: 36px;
+    line-height: 36px;
+    margin: 10px 0 0 0;
+    padding: 0px 18px; }
+
 /**
  * WooCommerce
  */
