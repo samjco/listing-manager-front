@@ -976,7 +976,7 @@ form.listing-manager-submission-form fieldset legend {
   .button:not(.menu-item):hover,
   .woocommerce .cart input.button:not(.menu-item):hover,
   .woocommerce #review_form #respond .form-submit input:not(.menu-item):hover, .woocommerce button.button:disabled[disabled]:hover {
-    background-color: #2d2d2d;
+    background-color: #3f3f3f !important;
     color: #fff; }
   .woocommerce a.button:active, .woocommerce a.button:focus,
   .woocommerce button.button:active,
@@ -1070,7 +1070,7 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce #payment #place_order:not(.menu-item):hover,
   .woocommerce-page #payment #place_order:not(.menu-item):hover,
   .woocommerce #review_form #respond .form-submit input:not(.menu-item):hover {
-    background-color: #0dd0c0;
+    background-color: #0dd0c0 !important;
     color: #fff; }
 
 .woocommerce .button-white:not(.menu-item),
@@ -1079,7 +1079,7 @@ form.listing-manager-submission-form fieldset legend {
   color: #252525; }
   .woocommerce .button-white:not(.menu-item):hover,
   .woocommerce button.button-white.button:disabled[disabled] .button-white:not(.menu-item):hover {
-    background-color: #fff;
+    background-color: #fff !important;
     color: #252525; }
 
 .main table {
@@ -2462,6 +2462,25 @@ form.listing-manager-submission-form fieldset legend {
     .listing-manager-share a.twitter {
       background-color: #00a9f1;
       color: #fff; }
+
+.woocommerce div.product form.cart .button, .woocommerce div.product form.cart #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit div.product form.cart input {
+  height: 44px !important; }
+
+.woocommerce div.product form.cart div.quantity {
+  margin: 0 15px 0 0; }
+
+.stock {
+  background-color: rgba(37, 37, 37, 0.03);
+  color: #252525 !important;
+  display: block;
+  float: left;
+  font-size: 11px !important;
+  font-weight: 700;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 15px 0 0;
+  padding: 0 26px;
+  text-transform: uppercase; }
 
 .woocommerce nav.woocommerce-pagination .page-numbers {
   border: 0; }

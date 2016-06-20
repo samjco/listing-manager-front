@@ -284,3 +284,25 @@
 		}		
 	}
 }
+
+.woocommerce div.product form.cart .button {
+	height: 44px !important;
+}
+
+.woocommerce div.product form.cart div.quantity {
+	margin: 0 15px 0 0;
+}
+
+.stock {
+	background-color: rgba($color-black, .03);
+	color: $color-black !important;
+	display: block;
+	float: left;
+	font-size: 11px !important; 
+	font-weight: 700;
+	height: 44px;
+	line-height: 44px;
+	margin: 0 15px 0 0;
+	padding: 0 26px;
+	text-transform: uppercase;	
+}
