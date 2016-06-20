@@ -6,7 +6,7 @@
 			<?php if ( is_search() ) : ?>
 				<h1><?php echo esc_html__( 'Search Results', 'listing-manager-front' ); ?></h1>
 			<?php elseif ( class_exists( 'WooCommerce' ) && is_shop() ) : ?>
-				<?php $title = woocommerce_page_title(); ?>
+				<?php $title = woocommerce_page_title( false ); ?>
 				
 				<h1>
 					<?php if ( ! empty( $title ) ) : ?>

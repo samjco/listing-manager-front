@@ -2290,6 +2290,8 @@ form.listing-manager-submission-form fieldset legend {
   border-top: 1px solid rgba(0, 0, 0, 0.04);
   margin-top: 30px;
   padding-top: 30px; }
+  .woocommerce ul.products .onsale {
+    z-index: 100; }
   .woocommerce ul.products li.product {
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     clear: none;
