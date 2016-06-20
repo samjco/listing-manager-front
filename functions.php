@@ -310,7 +310,10 @@ add_filter( 'woocommerce_show_page_title', 'listing_manager_front_woocommerce_sh
  * @return void
  */
 function listing_manager_front_woocommerce_loop_add_location() {
-	echo '<div class="product-location">' . Listing_Manager_Product_Listing::get_location_name() . '</div>';
+	$name = Listing_Manager_Product_Listing::get_location_name();
+	if ( ! empty( $name ) ) {
+		echo '<div class="product-location">' . Listing_Manager_Product_Listing::get_location_name() . '</div>';
+	}	
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woocommerce_loop_add_location' );
 
