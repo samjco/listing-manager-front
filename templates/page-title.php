@@ -6,9 +6,17 @@
 			<?php if ( is_search() ) : ?>
 				<h1><?php echo esc_html__( 'Search Results', 'listing-manager-front' ); ?></h1>
 			<?php elseif ( class_exists( 'WooCommerce' ) && is_shop() ) : ?>
-				<h1><?php echo woocommerce_page_title(); ?></h1>
+				<?php $title = woocommerce_page_title(); ?>
+				
+				<h1>
+					<?php if ( ! empty( $title ) ) : ?>
+						<?php echo esc_html( $title ); ?>
+					<?php else : ?>
+						<?php echo esc_html__( 'Listings', 'listing-manager' ); ?>
+					<?php endif; ?>
+				</h1>
 
-				<?php if ( is_shop() ) : ?>
+				<?php if ( is_shop() ) : ?>					
 					<?php $page_id = get_option( 'woocommerce_shop_page_id', null );?>
 					<?php if ( ! empty( $page_id ) ) : ?>
 						<?php $description = get_post_meta( $page_id, 'title_description', true ); ?>
@@ -16,7 +24,7 @@
 							<p>
 								<?php echo esc_html( $description ); ?>
 							</p>
-						<?php endif; ?>
+						<?php endif; ?>						
 					<?php endif; ?>
 				<?php endif; ?>
 			<?php elseif ( is_archive() ) : ?>
