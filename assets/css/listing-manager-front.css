@@ -1202,7 +1202,9 @@ form.listing-manager-submission-form fieldset legend {
 
 .site-branding {
   float: left;
-  white-space: nowrap; }
+  position: relative;
+  white-space: nowrap;
+  z-index: 10; }
 
 .site-title {
   display: inline-block;
@@ -1499,6 +1501,17 @@ form.listing-manager-submission-form fieldset legend {
     font-size: 9px;
     margin: 0 0 0 10px;
     vertical-align: 1px; }
+
+.header-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  bottom: -1px;
+  left: 0;
+  opacity: .3;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .footer-wrapper {
   background-image: linear-gradient(to right, #2A2F35, #444D59); }

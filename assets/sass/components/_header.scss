@@ -1,5 +1,5 @@
 .header {
-	background-color: $color-header-background;	
+	background-color: $color-header-background;		
 	border-bottom: 1px solid rgba(#fff, .1);
 	padding-bottom: 170px;
 	position: relative;
@@ -72,7 +72,9 @@
 
 .site-branding {
 	float: left;
+	position: relative;
 	white-space: nowrap;
+	z-index: 10;
 }
 
 .site-title {	
@@ -485,4 +487,16 @@
 		margin: 0 0 0 10px;
 		vertical-align: 1px;
 	}
+}
+
+.header-image {
+	background-position: center center;
+	background-repeat: no-repeat;	
+	background-size: 100% auto;	
+	bottom: -1px;
+	left: 0;
+	opacity: .3;
+	position: absolute;
+	right: 0;
+	top: 0;
 }

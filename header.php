@@ -13,7 +13,12 @@
 
 <div class="page-wrapper">
 	<div class="header-wrapper">
-		<div class="header">
+			<div class="header">		
+
+			<?php if ( is_single() && has_post_thumbnail() )  : ?>
+				<div class="header-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+			<?php endif; ?>		
+
 			<div class="header-inner">
 				<div class="header-content">
 					<div class="site-branding">

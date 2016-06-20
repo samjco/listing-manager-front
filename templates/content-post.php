@@ -18,18 +18,18 @@
 				<a href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail( 'medium' ); ?>
 				</a>
-			</div><!-- /.post-thumbnail -->
+			</div><!-- /.post-thumbnail -->		
+
+			<div class="post-title">
+				<?php $categories = get_the_category(); ?>
+				<?php if ( is_array( $categories ) && ! empty( $categories[0] ) ) : ?>
+					<?php $category = $categories[0]; ?>
+					<h4><?php echo esc_html( $category->name ); ?></h4>
+				<?php endif; ?>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			</div><!-- /.post-title -->
 		<?php endif; ?>
-
-		<div class="post-title">
-			<?php $categories = get_the_category(); ?>
-			<?php if ( is_array( $categories ) && ! empty( $categories[0] ) ) : ?>
-				<?php $category = $categories[0]; ?>
-				<h4><?php echo esc_html( $category->name ); ?></h4>
-			<?php endif; ?>
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		</div><!-- /.post-title -->
-
+		
 		<div class="post-content">
 			<?php if ( is_single() ) : ?>
 				<?php the_content(); ?>
