@@ -833,6 +833,21 @@ h4 {
   .content-box p {
     margin: 0; }
 
+.not-found h1 {
+  color: #0EDAC9;
+  font-size: 220px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-shadow: 10px 10px rgba(37, 37, 37, 0.1); }
+
+.not-found h2 {
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
 label {
   color: #252525;
   cursor: pointer;
