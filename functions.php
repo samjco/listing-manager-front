@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Libraries
+ */
+require_once get_template_directory() . '/assets/libraries/class-tgm-plugin-activation.php';
+
+/**
  * Register fonts
  *
  * Translators: If there are characters in your language that are not supported
@@ -436,6 +441,26 @@ function listing_manager_front_max_number_of_related( $args ) {
 	return $args;
 }
 add_filter( 'woocommerce_output_related_products_args', 'listing_manager_front_max_number_of_related' );
+
+/**
+ * Register plugins
+ *
+ * @hook tgmpa_register
+ * @return void
+ */
+function listing_manager_front_register_required_plugins() {
+	$plugins = array(
+		array(
+			'name'      			=> 'WooCommerce',
+			'slug'      			=> 'woocommerce',
+			'is_automatic'          => true,
+			'required'  			=> false,
+		),											
+	);
+
+	tgmpa( $plugins );
+}
+add_action( 'tgmpa_register', 'listing_manager_front_register_required_plugins' );
 
 /**
  * Define product actions
