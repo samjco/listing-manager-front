@@ -21,8 +21,8 @@
 					</a><!-- /.button -->
 				<?php endif; ?>
 
-				<?php $secondary_button_link = get_theme_mod( 'listing_manager_front_hero_images_primary_button_link', null ); ?>
-				<?php $secondary_button_text = get_theme_mod( 'listing_manager_front_hero_images_primary_button_text', null ); ?>
+				<?php $secondary_button_link = get_theme_mod( 'listing_manager_front_hero_images_secondary_button_link', null ); ?>
+				<?php $secondary_button_text = get_theme_mod( 'listing_manager_front_hero_images_secondary_button_text', null ); ?>
 
 				<?php if ( ! empty( $secondary_button_link ) && ! empty( $secondary_button_text ) ) : ?>
 					<a href="<?php echo esc_attr( $secondary_button_text ); ?>" class="button button-white">
