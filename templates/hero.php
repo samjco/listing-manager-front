@@ -16,7 +16,7 @@
 				<?php $primary_button_text = get_theme_mod( 'listing_manager_front_hero_images_primary_button_text', null ); ?>
 
 				<?php if ( ! empty( $primary_button_link ) && ! empty( $primary_button_text ) ) : ?>
-					<a href="<?php echo esc_attr( $primary_button_text ); ?>" class="button button-primary">
+					<a href="<?php echo esc_attr( $primary_button_link ); ?>" class="button button-primary">
 						<?php echo esc_html( $primary_button_text ); ?>
 					</a><!-- /.button -->
 				<?php endif; ?>
@@ -25,10 +25,10 @@
 				<?php $secondary_button_text = get_theme_mod( 'listing_manager_front_hero_images_secondary_button_text', null ); ?>
 
 				<?php if ( ! empty( $secondary_button_link ) && ! empty( $secondary_button_text ) ) : ?>
-					<a href="<?php echo esc_attr( $secondary_button_text ); ?>" class="button button-white">
+					<a href="<?php echo esc_attr( $secondary_button_link ); ?>" class="button button-white">
 						<?php echo esc_html( $secondary_button_text ); ?>
 
-						<?php $secondary_button_description = get_theme_mod( 'listing_manager_front_hero_images_primary_button_description', null ); ?>
+						<?php $secondary_button_description = get_theme_mod( 'listing_manager_front_hero_images_secondary_button_description', null ); ?>
 						<?php if ( ! empty( $secondary_button_description ) ) : ?>
 							<span class="description">
 								<?php echo esc_html( $secondary_button_description ); ?>
