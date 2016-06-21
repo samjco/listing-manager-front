@@ -12,7 +12,7 @@
 					<?php if ( ! empty( $title ) ) : ?>
 						<?php echo esc_html( $title ); ?>
 					<?php else : ?>
-						<?php echo esc_html__( 'Listings', 'listing-manager' ); ?>
+						<?php echo esc_html__( 'Listings', 'listing-manager-front' ); ?>
 					<?php endif; ?>
 				</h1>
 
