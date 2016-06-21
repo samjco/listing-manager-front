@@ -1,10 +1,13 @@
 jQuery(document).ready(function($) {
     'use strict';
 
-    $('.blog .posts').masonry({
-        itemSelector: '.type-post',
-        percentPosition: true,
-        gutter: 30
+    var container = $('.blog .posts');
+    container.imagesLoaded(function() {
+        container.masonry({
+            itemSelector: '.type-post',
+            percentPosition: true,
+            gutter: 30
+        });
     });
 
     /**
