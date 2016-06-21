@@ -22,9 +22,10 @@
 			<div class="header-inner">
 				<div class="header-content">
 					<div class="site-branding">
-						<div class="site-title">
-							<a href="<?php echo site_url(); ?>">
-								<?php the_custom_logo(); ?>
+						<div class="site-title">							
+							<?php the_custom_logo(); ?>
+
+							<a href="<?php echo site_url(); ?>">	
 								<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
 									<?php bloginfo( 'name' ); ?>
 								<?php endif; ?>

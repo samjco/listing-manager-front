@@ -190,7 +190,7 @@ add_filter( 'excerpt_length', 'listing_manager_front_excerpt_length' );
  * @return string
  */
 function listing_manager_front_excerpt_more( $more ) {
-	return '<a href="' . get_the_permalink(). '" class="button button-primary read-more">' . esc_html__( 'Read More', 'listing-manager-front' ) . '</a>';
+	return '<div class="read-more-wrapper"><a href="' . get_the_permalink(). '" class="button button-primary read-more">' . esc_html__( 'Read More', 'listing-manager-front' ) . '</a></div>';
 }
 add_filter( 'excerpt_more', 'listing_manager_front_excerpt_more' );
 
