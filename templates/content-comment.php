@@ -18,15 +18,17 @@
         <div class="comment-inner">
             <div class="comment-header">
                 <h2><?php comment_author(); ?></h2>
-                <span class="separator">&#8226;</span>
-                <span class="comment-date"><?php echo get_comment_date(); ?></span>
-                <?php comment_reply_link( array_merge( $args, array(
-					'add_below'     => 'comment',
-					'depth'         => $depth,
-					'reply_text'    => '<i class="fa fa-reply"></i> ' . esc_html__( 'Reply', 'listing-manager-front' ),
-					'max_depth'     => $args['max_depth'],
-	            ) ) ); ?>
 
+                <div class="comment-header-meta">
+                    <span class="comment-date"><?php echo get_comment_date(); ?></span>
+
+                    <?php comment_reply_link( array_merge( $args, array(
+    					'add_below'     => 'comment',
+    					'depth'         => $depth,
+    					'reply_text'    => esc_html__( 'Reply', 'listing-manager-front' ),
+    					'max_depth'     => $args['max_depth'],
+    	            ) ) ); ?>
+                </div><!-- /.comment-header-meta -->
             </div><!-- /.comment-header -->
 
             <div class="comment-content-wrapper">

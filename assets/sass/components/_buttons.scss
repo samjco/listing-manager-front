@@ -71,12 +71,12 @@
 .woocommerce .button-primary:not(.menu-item),
 .woocommerce button.button-primary.button:disabled[disabled],
 .button-primary:not(.menu-item) {
-	background-color: $color-primary;
-	color: #fff;
+	background-color: $color-primary !important;
+	color: #fff !important;
 
 	&:hover {
 		background-color: darken($color-primary, 2%) !important;
-		color: #fff;
+		color: #fff !important;
 	}
 }
 

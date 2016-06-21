@@ -64,3 +64,59 @@
 		}
 	}
 }
+
+.post-content {
+	h1 {
+		font-size: 30px;
+		font-weight: 300;
+	}
+
+	h2 {
+		font-size: 26px;
+		font-weight: 300;
+	}
+
+	h3 {
+		font-size: 22px;
+		font-weight: 400;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	h5 {
+		font-size: 16px;
+		font-weight: 400;
+	}		
+
+	h6 {
+		font-size: 12px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}	
+
+	blockquote {
+		background-color: rgba($color-black, .04);
+		margin: 0;
+		overflow: hidden;
+		padding: 30px;
+		position: relative;	
+
+		cite {
+			display: block;
+			font-weight: bold;
+		}
+
+		&:after {
+			bottom: -30px;
+			color: $color-primary;
+			content: '\f10d';
+			font-family: 'FontAwesome';
+			font-size: 100px;
+			position: absolute;
+			right: 25px;
+		}
+	}
+}

@@ -55,7 +55,7 @@ if ( post_password_required() ) {
 	<?php comment_form( array(
 		'comment_notes_after'   => '<p class="form-allowed-tags">' . sprintf( esc_html__( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'listing-manager-front' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
 		'title_reply'   => esc_html__( 'Write a Comment', 'listing-manager-front' ),
-		'class_submit'  => 'btn btn-primary',
+		'class_submit'  => 'button button-primary',
 		'comment_field' => '<div class="form-group"><label for="comment">' . esc_html__( 'Comment', 'listing-manager-front' ) . ' <span class="required">*</span></label><textarea id="comment" name="comment" class="form-control" cols="45" rows="5" aria-required="true"></textarea></div><!-- /.form-group -->',
 		'fields'        => apply_filters( 'comment_form_default_fields', array(
 				'author'    => '<div class="row"><div class="form-group col-sm-4"><label for="comment-author">' . esc_html__( 'Name', 'listing-manager-front' ) . ' <span class="required">*</span></label><input id="comment-author" type="text" required="required" class="form-control" name="author"></div><!-- /.form-group -->',
