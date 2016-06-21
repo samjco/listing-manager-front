@@ -156,7 +156,7 @@ add_action( 'after_setup_theme', 'listing_manager_front_after_theme_setup' );
 /**
  * Register navigations
  *
- * @action init
+ * @hook init
  * @return void
  */
 function listing_manager_front_menu() {
@@ -168,8 +168,8 @@ add_action( 'init', 'listing_manager_front_menu' );
 /**
  * Custom excerpt length
  *
- * @param int $length String length.
- * @filter excerpt_length
+ * @hook excerpt_length 
+ * @param int $length String length. 
  * @return int
  */
 function listing_manager_front_excerpt_length( $length ) {
@@ -186,8 +186,8 @@ add_filter( 'excerpt_length', 'listing_manager_front_excerpt_length' );
 /**
  * Custom read more
  *
+ * @hook excerpt_more 
  * @param string $more Read more string.
- * @filter excerpt_more
  * @return string
  */
 function listing_manager_front_excerpt_more( $more ) {
@@ -513,6 +513,133 @@ function listing_manager_front_register_required_plugins() {
 	tgmpa( $plugins );
 }
 add_action( 'tgmpa_register', 'listing_manager_front_register_required_plugins' );
+
+/**
+ * Customizations
+ *
+ * @hook customize_register
+ * @param Obj $wp_customize
+ * @return void
+ */
+function listing_manager_front_customizations( $wp_customize ) {	
+	$wp_customize->add_section( 'listing_manager_front_hero_images', array( 'title' => esc_html__( 'Listing Manager Front Hero Images', 'listing-manager-front' ), 'priority' => 0 ) );
+
+	// Title
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_title', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_title', array(
+		'label'             => esc_html__( 'Title', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_title',
+		'type'              => 'text',
+	) );
+
+	// Description
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_description', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_description', array(
+		'label'             => esc_html__( 'Description', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_description',
+		'type'              => 'textarea',
+	) );
+
+	// Primary Button Link
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_primary_button_link', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_primary_button_link', array(
+		'label'             => esc_html__( 'Primary Button Link', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_primary_button_link',
+		'type'              => 'text',
+	) );	
+
+	// Primary Button Text
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_primary_button_text', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_primary_button_text', array(
+		'label'             => esc_html__( 'Primary Button Text', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_primary_button_text',
+		'type'              => 'text',
+	) );	
+
+
+	// Secondary Button Link
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_secondary_button_link', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_secondary_button_link', array(
+		'label'             => esc_html__( 'Secondary Button Link', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_secondary_button_link',
+		'type'              => 'text',
+	) );		
+
+	// Secondary Button Text
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_secondary_button_text', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_secondary_button_text', array(
+		'label'             => esc_html__( 'Secondary Button Text', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_secondary_button_text',
+		'type'              => 'text',
+	) );		
+
+	// Secondary Button Description
+	$wp_customize->add_setting( 'listing_manager_front_hero_images_secondary_button_description', array(
+		'default'           => null,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'listing_manager_front_hero_images_secondary_button_description', array(
+		'label'             => esc_html__( 'Secondary Button Description', 'listing-manager-front' ),
+		'section'           => 'listing_manager_front_hero_images',
+		'settings'          => 'listing_manager_front_hero_images_secondary_button_description',
+		'type'              => 'text',
+	) );	
+
+	// Secondary Images
+	for ( $i = 1; $i <= 3; $i++ ) {		
+		$wp_customize->add_setting( 'listing_manager_front_hero_images_image_' . $i , array(
+			'default'           => null,
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'sanitize_text_field',
+		) );
+
+		$wp_customize->add_control( 'listing_manager_front_hero_images_image_' . $i, array(
+			'label'             => esc_html__( 'Image', 'listing-manager-front' ),
+			'section'           => 'listing_manager_front_hero_images',
+			'settings'          => 'listing_manager_front_hero_images_image_' . $i,
+			'type'              => 'text',
+		) );	
+	}	
+}
+add_action( 'customize_register', 'listing_manager_front_customizations' );
 
 /**
  * Define product actions
