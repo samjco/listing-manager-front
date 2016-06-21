@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> itemscope itemtype="http://schema.org/WebPage">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +91,7 @@
 					<div class="site-branding">
 						<div class="site-title">						
 							<?php the_custom_logo(); ?>
-							
+
 							<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
 								<a href="<?php echo site_url(); ?>">
 									<?php bloginfo( 'name' ); ?>
