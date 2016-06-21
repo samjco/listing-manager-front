@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
 
     $('.blog .posts').masonry({
         itemSelector: '.type-post',
+        percentPosition: true,
         gutter: 30
     });
 
