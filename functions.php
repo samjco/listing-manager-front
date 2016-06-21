@@ -482,6 +482,19 @@ function listing_manager_front_max_number_of_related( $args ) {
 add_filter( 'woocommerce_output_related_products_args', 'listing_manager_front_max_number_of_related' );
 
 /**
+ * Posts pagination
+ *
+ * @return void
+ */
+function listing_manager_front_pagination() {
+	the_posts_pagination( array(
+		'prev_text'  => esc_html__( 'Previous', 'listing-manager-front' ),
+		'next_text'  => esc_html__( 'Next', 'listing-manager-front' ),
+		'mid_size'   => 2,
+	) );
+}
+
+/**
  * Register plugins
  *
  * @hook tgmpa_register

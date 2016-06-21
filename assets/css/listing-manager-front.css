@@ -2377,6 +2377,14 @@ form.listing-manager-submission-form fieldset legend {
     position: absolute;
     right: 25px; }
 
+.pagination {
+  margin: 40px 0 0 0;
+  text-align: center; }
+  .pagination .nav-links .current, .pagination .nav-links a {
+    color: #252525;
+    margin: 0 18px;
+    font-weight: 700; }
+
 /**
  * WooCommerce
  */

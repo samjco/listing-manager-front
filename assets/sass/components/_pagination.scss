@@ -1,0 +1,12 @@
+.pagination {
+	margin: 40px 0 0 0;
+	text-align: center;
+
+	.nav-links {
+		.current, a {
+			color: $color-black;
+			margin: 0 18px;
+			font-weight: 700;
+		}
+	}
+}
