@@ -1181,61 +1181,61 @@ form.listing-manager-submission-form fieldset legend {
     background-color: #fff !important;
     color: #252525; }
 
-.main table {
+.main .content table {
   border-collapse: separate;
   margin: 0 0 30px 0;
   width: 100%; }
-  .main table th {
+  .main .content table th {
     border-bottom: 1px solid #f4f4f4;
     font-size: 15px !important;
     font-weight: 700;
     text-align: left; }
-    .main table th.empty {
+    .main .content table th.empty {
       background-color: #fff; }
-  .main table th, .main table td {
+  .main .content table th, .main .content table td {
     padding: 15px 25px !important; }
-  .main table td {
+  .main .content table td {
     border-bottom: 1px solid #f4f4f4;
     transition: background-color .2s ease;
     vertical-align: middle; }
-    .main table td input {
+    .main .content table td input {
       width: 100%; }
-    .main table td.day-name {
+    .main .content table td.day-name {
       font-weight: 400 !important; }
-  .main table h3 {
+  .main .content table h3 {
     font-size: 14px;
     font-weight: 600;
     margin: 0;
     padding: 0; }
-    .main table h3 a {
+    .main .content table h3 a {
       color: #252525; }
-  .main table tbody tr:hover td {
+  .main .content table tbody tr:hover td {
     background-color: transparent; }
-  .main table tbody tr:nth-child(even) td {
+  .main .content table tbody tr:nth-child(even) td {
     background-color: transparent; }
-  .main table tbody tr:last-child td {
+  .main .content table tbody tr:last-child td {
     border-bottom: 0; }
-  .main table .thumbnail-wrapper {
+  .main .content table .thumbnail-wrapper {
     padding-right: 0;
     width: 1px; }
-    .main table .thumbnail-wrapper img {
+    .main .content table .thumbnail-wrapper img {
       display: block;
       height: auto;
       margin: 0;
       max-width: 60px; }
-  .main table .actions-wrapper {
+  .main .content table .actions-wrapper {
     width: 1px;
     white-space: nowrap; }
-  .main table .woocommerce .button:not(.menu-item), .main table .woocommerce #review_form #respond .form-submit input:not(.menu-item), .main table .button:not(.menu-item), .main table .woocommerce #review_form #respond .form-submit input:not(.menu-item), .woocommerce #review_form #respond .form-submit .main table input:not(.menu-item) {
+  .main .content table .woocommerce .button:not(.menu-item), .main .content table .woocommerce #review_form #respond .form-submit input:not(.menu-item), .main .content table .button:not(.menu-item), .main .content table .woocommerce #review_form #respond .form-submit input:not(.menu-item), .woocommerce #review_form #respond .form-submit .main .content table input:not(.menu-item) {
     font-size: 12px;
     height: auto;
     line-height: 1;
     padding: 12px 15px; }
-  .main table .button.remove, .main table .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .main table input.remove {
+  .main .content table .button.remove, .main .content table .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .main .content table input.remove {
     background-color: #D80C00;
     color: #fff !important;
     width: auto; }
-    .main table .button.remove:hover, .main table .woocommerce #review_form #respond .form-submit input.remove:hover, .woocommerce #review_form #respond .form-submit .main table input.remove:hover {
+    .main .content table .button.remove:hover, .main .content table .woocommerce #review_form #respond .form-submit input.remove:hover, .woocommerce #review_form #respond .form-submit .main .content table input.remove:hover {
       background-color: #D80C00; }
 
 .header {
