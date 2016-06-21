@@ -20,7 +20,7 @@
 			</div><!-- /.footer-wrapper -->
 		<?php endif; ?>
 	</div><!-- /.page-wrapper -->
-</body>
 
-<?php wp_footer(); ?>
+	<?php wp_footer(); ?>
+</body>
 </html>

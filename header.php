@@ -24,12 +24,12 @@
 					<div class="site-branding">
 						<div class="site-title">							
 							<?php the_custom_logo(); ?>
-
-							<a href="<?php echo site_url(); ?>">	
-								<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
+							
+							<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
+								<a href="<?php echo site_url(); ?>">	
 									<?php bloginfo( 'name' ); ?>
-								<?php endif; ?>
-							</a>
+								</a>
+							<?php endif; ?>							
 						</div><!-- /.site-title -->
 
 						<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
