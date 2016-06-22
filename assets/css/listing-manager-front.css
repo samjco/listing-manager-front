@@ -2403,13 +2403,18 @@ form.listing-manager-submission-form fieldset legend {
   list-style: none;
   margin: 0;
   padding: 0; }
+  .listing-manager-categories:after {
+    content: " ";
+    display: block;
+    clear: both; }
   .listing-manager-categories > li {
     margin-bottom: 30px;
     width: 17.64706%;
     float: left;
     margin-right: 2.94118%; }
     .listing-manager-categories > li:nth-child(5n+1) {
-      clear: left; }
+      float: right;
+      margin-right: 0; }
     .listing-manager-categories > li > ul {
       list-style: none;
       margin: 0;

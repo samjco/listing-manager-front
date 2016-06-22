@@ -1,4 +1,6 @@
 .listing-manager-categories {
+	@include susy-clearfix();
+	
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -8,7 +10,7 @@
 		@include span(2 of 10); 
 
 		&:nth-child(5n+1) {
-			clear: left;
+			@include last();
 		}
 
 		> ul {
