@@ -500,6 +500,20 @@ h3 {
 h4 {
   font-size: 20px; }
 
+.fullwidth {
+  margin-left: -1200px;
+  margin-right: -1200px;
+  padding-left: 1200px;
+  padding-right: 1200px; }
+
+.background-white {
+  background-color: #fff; }
+
+.background-map {
+  background-image: url("../img/map.png");
+  background-position: center center;
+  background-repeat: repeat; }
+
 .return-back {
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
@@ -2391,8 +2405,9 @@ form.listing-manager-submission-form fieldset legend {
   padding: 0; }
   .listing-manager-categories > li {
     margin-bottom: 30px;
+    width: 17.64706%;
     float: left;
-    width: 20%; }
+    margin-right: 2.94118%; }
     .listing-manager-categories > li:nth-child(5n+1) {
       clear: left; }
     .listing-manager-categories > li > ul {
@@ -2413,7 +2428,7 @@ form.listing-manager-submission-form fieldset legend {
         color: rgba(37, 37, 37, 0.7);
         display: block;
         font-size: 13px;
-        padding: 6px 30px 6px 0;
+        padding: 6px 0;
         transition: all .2s ease; }
         .listing-manager-categories > li > ul a:after {
           content: " ";
@@ -2452,7 +2467,7 @@ form.listing-manager-submission-form fieldset legend {
   .listing-manager-categories h4 {
     font-size: 16px;
     font-weight: 400;
-    margin: 0 30px 20px 0;
+    margin: 0 0 20px 0;
     padding: 0 0 10px 0;
     position: relative; }
     .listing-manager-categories h4 a {
