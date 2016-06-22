@@ -500,6 +500,10 @@ h3 {
 h4 {
   font-size: 20px; }
 
+.padding-top-bottom {
+  padding-bottom: 60px;
+  padding-top: 60px; }
+
 .fullwidth {
   margin-left: -1200px;
   margin-right: -1200px;
@@ -2409,6 +2413,7 @@ form.listing-manager-submission-form fieldset legend {
     clear: both; }
   .listing-manager-categories > li {
     margin-bottom: 30px;
+    margin-top: 30px;
     width: 17.64706%;
     float: left;
     margin-right: 2.94118%; }
