@@ -175,7 +175,7 @@ add_action( 'init', 'listing_manager_front_menu' );
 function listing_manager_front_excerpt_length( $length ) {
 	global $post;
 
-	if ( $post->post_type == 'post' ) {
+	if ( 'post' === $post->post_type  ) {
 		return 20;
 	} 
 

@@ -18,6 +18,7 @@ plugin you can use theme for other purposes like e-shop or blogging website.
 * Font Awesome
 * Child theme included
 * TGM for plugin installations prepared
+* Everything is properly escaped
 
 ## What is Listing Manager?
 
