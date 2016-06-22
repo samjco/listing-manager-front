@@ -82,6 +82,10 @@ form.listing-manager-submission-form fieldset legend {
 	padding: 25px 25px 25px 25px;
 }
 
+.form-group {
+	position: relative;
+}
+
 .form-group-button {
 	.button {
 		width: 100%;
@@ -122,5 +126,46 @@ form.listing-manager-submission-form fieldset legend {
 		&:nth-child(4n) {
 			@include last();
 		}
+	}
+}
+
+.dropdown-menu {
+	background-color: #fff;
+	border-radius: 3px;
+	border: 1px solid #ececec;
+	box-shadow: 0 1px 2px 0 rgba(#000, .05);
+	left: 0;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;	
+	right: 0;
+	z-index: 100;
+
+	li {
+		&.active {
+			background-color: lighten($color-primary, 20%);
+		}
+	}
+
+	a {
+		color: $color-black;
+		display: block;
+		padding: 8px 15px;
+	}
+
+	img {
+		display: inline-block; 
+		height: auto;
+		margin: 0 15px 0 0;
+		vertical-align: middle;
+		width: 30px;
+	}
+
+	strong {
+		font-size: 13px;
+		font-weight: 400;
+		vertical-align: middle;
 	}
 }
