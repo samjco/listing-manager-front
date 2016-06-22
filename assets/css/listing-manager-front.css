@@ -514,6 +514,9 @@ h4 {
 .background-white {
   background-color: #fff; }
 
+.background-gray {
+  background-color: #fafafa; }
+
 .background-map {
   background-image: url("../img/map.png");
   background-position: center center;
@@ -846,12 +849,18 @@ h4 {
 
 .content-box {
   background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
   padding: 25px; }
   .content-box h3.widget-title {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
     white-space: nowrap; }
   .content-box p {
-    margin: 0; }
+    font-size: 13px;
+    margin: 0;
+    text-align: center; }
 
 .not-found h1 {
   color: #0EDAC9;

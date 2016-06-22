@@ -13,6 +13,10 @@
 .background-white {
 	background-color: #fff;
 }
+ 
+.background-gray {
+	background-color: $color-gray-lightest;
+}
 
 .background-map {
 	background-image: url('../img/map.png');
@@ -443,15 +447,21 @@
 
 .content-box {
 	background-color: #fff;
+	border: 1px solid rgba(#000, .06);
+	border-radius: 3px;
 	padding: 25px;
 
 	h3.widget-title {
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 600;
+		text-align: center;
 		white-space: nowrap;
 	}
 
 	p {
+		font-size: 13px;
 		margin: 0;
+		text-align: center;
 	}
 }
 
