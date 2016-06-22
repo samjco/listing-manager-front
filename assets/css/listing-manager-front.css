@@ -851,8 +851,14 @@ h4 {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 3px;
-  padding: 25px; }
-  .content-box h3.widget-title {
+  padding: 25px;
+  text-align: center; }
+  .content-box .fa {
+    display: block;
+    color: rgba(37, 37, 37, 0.3);
+    font-size: 30px;
+    margin: 0 0 30px 0; }
+  .content-box h4 {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
