@@ -464,6 +464,7 @@ html {
   width: 100%; }
 
 body {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #f4f4f2;
   color: #252525;
