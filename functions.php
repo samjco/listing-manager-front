@@ -1,4 +1,9 @@
 <?php
+/**
+ * Contstants
+ */
+define( 'LISTING_MANAGER_FRONT_PRODUCT_EXCERPT_LENGTH', 15 );
+define( 'LISTING_MANAGER_FRONT_POST_EXCERPT_LENGTH', 20 );
 
 /**
  * Libraries
@@ -176,7 +181,7 @@ function listing_manager_front_excerpt_length( $length ) {
 	global $post;
 
 	if ( 'post' === $post->post_type  ) {
-		return 20;
+		return LISTING_MANAGER_FRONT_POST_EXCERPT_LENGTH;
 	} 
 
 	return $length;
@@ -339,9 +344,21 @@ add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woo
  * @return void
  */
 function listing_manager_front_woocommerce_loop_add_excerpt() {
-	the_excerpt();
+	woocommerce_template_single_excerpt();
 }
 add_action( 'woocommerce_after_shop_loop_item_title', 'listing_manager_front_woocommerce_loop_add_excerpt' );
+
+/**
+ * Custom implementation of excerpt size for WooCommerce products
+ *
+ * @see woocommerce_short_description
+ * @param string $excerpt
+ * @return string
+ */
+function listing_manager_front_woocommerce_short_description( $excerpt ) {
+	return '<p>' . wp_trim_words( $excerpt, LISTING_MANAGER_FRONT_PRODUCT_EXCERPT_LENGTH ) . '</p>';
+}
+add_filter ( 'woocommerce_short_description', 'listing_manager_front_woocommerce_short_description');
 
 /**
  * Adds event after product in loop
