@@ -6,9 +6,9 @@ in few hours. Theme supports WooCommerce and all native WordPress elements so if
 plugin you can use theme for other purposes like e-shop or blogging website.
 
 * Official website at [wplistingmanager.com](http://wplistingmanager.com)
-* Listing Manager plugin available at [CodeCanyon](codecanyon.net/item/listing-manager-directory-listings-for-woocommerce/16250019?ref=codevisionthemes)
+* Listing Manager plugin available at [CodeCanyon](https://codecanyon.net/item/listing-manager-directory-listings-for-woocommerce/16250019?ref=codevisionthemes)
 
-** Main Features **
+**Main Features**
 
 * WooCommerce support
 * SASS files used
