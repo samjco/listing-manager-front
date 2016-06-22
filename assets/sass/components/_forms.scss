@@ -2,8 +2,10 @@ label {
 	color: $color-black;
 	cursor: pointer;
 	display: block;
+	font-size: 11px;
 	font-weight: 600;
 	margin: 0 0 15px 0;
+	text-transform: uppercase;
 
 	.page-template-page-simple & {
 		color: rgba(#fff, .7);
