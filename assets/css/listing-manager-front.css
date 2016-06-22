@@ -1818,7 +1818,7 @@ form.listing-manager-submission-form fieldset legend {
 
 .hero-wrapper {
   background-color: #3f4348;
-  height: calc(100vh - 83px - 60px);
+  height: calc(100vh - 83px);
   padding-left: 1000px;
   padding-right: 1000px;
   margin: -50px -1000px 0 -1000px;
@@ -1830,7 +1830,7 @@ form.listing-manager-submission-form fieldset legend {
       height: auto !important;
       min-height: inherit; } }
   .admin-bar .hero-wrapper {
-    height: calc(100vh - 83px - 32px - 60px); }
+    height: calc(100vh - 83px - 32px); }
   .hero-wrapper .buttons {
     margin: 60px 0 0 0;
     text-align: center; }

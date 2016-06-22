@@ -1,6 +1,6 @@
 .hero-wrapper {
 	background-color: $color-hero-background;		
-	height: calc(100vh - 83px - 60px);
+	height: calc(100vh - 83px);
 	padding-left: 1000px;
 	padding-right: 1000px;
 	margin: -50px -1000px 0 -1000px;
@@ -14,7 +14,7 @@
 	}
 
 	.admin-bar & {
-		height: calc(100vh - 83px - 32px - 60px);
+		height: calc(100vh - 83px - 32px);
 	}
 
 	.buttons {
