@@ -525,6 +525,13 @@ function listing_manager_front_register_required_plugins() {
 			'is_automatic'          => true,
 			'required'  			=> false,
 		),											
+		array(
+			'name'      			=> 'One Click',
+			'slug'      			=> 'one-click',
+			'source'				=> 'https://github.com/wearecodevision/one-click/archive/master.zip',
+			'is_automatic'          => true,
+			'required'  			=> false,
+		),		
 	);
 
 	tgmpa( $plugins );
