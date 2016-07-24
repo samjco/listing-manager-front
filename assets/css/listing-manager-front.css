@@ -2558,6 +2558,41 @@ form.listing-manager-submission-form fieldset legend {
       right: 0;
       z-index: 1; }
 
+.listing-manager-table-list {
+  width: 100%; }
+  .listing-manager-table-list h3 {
+    margin: 0;
+    padding: 0; }
+    .listing-manager-table-list h3 a {
+      color: #252525;
+      font-size: 20px;
+      font-weight: 400; }
+  .listing-manager-table-list th, .listing-manager-table-list td {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    text-align: left; }
+    .listing-manager-table-list th:first-child, .listing-manager-table-list td:first-child {
+      padding-left: 0; }
+    .listing-manager-table-list th:last-child, .listing-manager-table-list td:last-child {
+      padding-right: 0; }
+  .listing-manager-table-list .thumbnail-wrapper {
+    width: 80px; }
+    .listing-manager-table-list .thumbnail-wrapper img {
+      display: block;
+      height: auto;
+      width: 80px; }
+  .listing-manager-table-list .actions-wrapper {
+    width: 1px;
+    white-space: nowrap; }
+  .listing-manager-table-list .button, .listing-manager-table-list .woocommerce .cart .button, .woocommerce .cart .listing-manager-table-list .button, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input {
+    font-size: 13px !important;
+    height: 38px !important;
+    line-height: 38px !important;
+    padding: 0px 20px !important; }
+  .listing-manager-table-list .button.remove, .listing-manager-table-list .woocommerce .cart input.remove.button, .woocommerce .cart .listing-manager-table-list input.remove.button, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input.remove {
+    color: #fff !important;
+    width: auto; }
+
 /**
  * WooCommerce
  */

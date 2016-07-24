@@ -1,0 +1,55 @@
+.listing-manager-table-list {
+	width: 100%;
+
+	h3 {
+		margin: 0;
+		padding: 0;
+
+		a {
+			color: $color-black;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	th, td {
+		border-bottom: 1px solid rgba(#000, .02);
+		padding: 20px;
+		text-align: left;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	.thumbnail-wrapper {
+		width: 80px;
+
+		img {
+			display: block;
+			height: auto;
+			width: 80px;
+		}
+	}
+
+	.actions-wrapper {
+		width: 1px;
+		white-space: nowrap;
+	}
+
+	.button {
+		font-size: 13px !important;		
+		height: 38px !important;
+		line-height: 38px !important;
+		padding: 0px 20px !important;
+	}
+
+	.button.remove {
+		color: #fff !important;
+		width: auto;
+	}
+}
