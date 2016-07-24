@@ -1,8 +1,8 @@
 <?php
 
 /**
- * MarketHub child functions and definitions
+ * Listing Manager Front child functions and definitions
  *
- * @package MarketHub Child
- * @since MarketHub Child 1.0.0
+ * @package Listing Manager Front Child
+ * @since Listing Manager Front Child 1.0.0
  */
