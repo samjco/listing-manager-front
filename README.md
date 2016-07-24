@@ -7,14 +7,18 @@ plugin you can use theme for other purposes like e-shop or blogging website.
 
 * Official website at [wplistingmanager.com](http://wplistingmanager.com)
 * Listing Manager plugin available at [CodeCanyon](https://codecanyon.net/item/listing-manager-directory-listings-for-woocommerce/16250019?ref=codevisionthemes)
+* Are you looking for [custom development](http://wearecodevision.com)?
 
 **Main Features**
 
 * WooCommerce support
 * SASS files used
+* One click installation
 * Susy framework for grid system
 * Language pack in POT file
 * Gulp file for automatization
+* Google Maps for listings
+* Listing views and search queries collector
 * Font Awesome
 * Child theme included
 * TGM for plugin installations prepared
