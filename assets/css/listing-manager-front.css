@@ -1351,8 +1351,17 @@ form.listing-manager-submission-form fieldset legend {
   .admin-bar .header-sticky {
     top: 32px; }
 
+.header-sticky-inner {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
+  .header-sticky-inner:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
 .header-inner {
-  max-width: 100%;
+  max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;

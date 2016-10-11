@@ -88,32 +88,34 @@
 				</div><!-- /.header-content -->
 
 				<div class="header-sticky">
-					<div class="site-branding">
-						<div class="site-title">						
-							<?php the_custom_logo(); ?>
+					<div class="header-sticky-inner">
+						<div class="site-branding">
+							<div class="site-title">
+								<?php the_custom_logo(); ?>
+
+								<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
+									<a href="<?php echo site_url(); ?>">
+										<?php bloginfo( 'name' ); ?>
+									</a>
+								<?php endif; ?>
+							</div><!-- /.site-title -->
 
 							<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
-								<a href="<?php echo site_url(); ?>">
-									<?php bloginfo( 'name' ); ?>
-								</a>
-							<?php endif; ?>							
-						</div><!-- /.site-title -->
+								<div class="site-description">
+									<?php echo html_entity_decode( get_bloginfo( 'description' ) ); ?>
+								</div><!-- /.site-description -->
+							<?php endif; ?>
+						</div><!-- /.site-branding -->
 
-						<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
-							<div class="site-description">
-								<?php echo html_entity_decode( get_bloginfo( 'description' ) ); ?>
-							</div><!-- /.site-description -->
+						<?php if ( has_nav_menu( 'primary' ) ) : ?>
+							<div class="site-navigation">
+								<?php wp_nav_menu( array(
+									'fallback_cb'       => '',
+									'theme_location'    => 'primary',
+								) ); ?>
+							</div><!-- /.site-navigation -->
 						<?php endif; ?>
-					</div><!-- /.site-branding -->
-					
-					<?php if ( has_nav_menu( 'primary' ) ) : ?>
-						<div class="site-navigation">
-							<?php wp_nav_menu( array(
-								'fallback_cb'       => '',
-								'theme_location'    => 'primary',
-							) ); ?>
-						</div><!-- /.site-navigation -->
-					<?php endif; ?>
+					</div><!-- /.header-sticky-inner -->
 				</div><!-- /.header-sticky -->
 			</div><!-- /.header-inner -->
 		</div><!-- /.header -->
