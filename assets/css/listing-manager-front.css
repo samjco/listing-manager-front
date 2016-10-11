@@ -391,8 +391,9 @@ th {
     margin-top: auto; }
 
 .main-inner {
-  min-height: calc(100vh - 378px);
-  padding: 50px; }
+  min-height: calc(100vh - 278px);
+  box-sizing: border-box;
+  padding: 30px; }
   @media (max-width: 48em) {
     .main-inner {
       padding: 30px; } }
@@ -2685,7 +2686,7 @@ form.listing-manager-submission-form fieldset legend {
 .woocommerce-breadcrumb {
   color: rgba(255, 255, 255, 0.7) !important;
   font-size: 13px;
-  left: 50px;
+  left: 30px;
   position: absolute;
   top: -44px; }
   .woocommerce-breadcrumb a {
@@ -2833,7 +2834,7 @@ form.listing-manager-submission-form fieldset legend {
 
 .woocommerce .woocommerce-product-actions {
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: -50px;
   white-space: nowrap; }
   .woocommerce .woocommerce-product-actions div {
@@ -2842,13 +2843,16 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce .woocommerce-product-actions .button, .woocommerce .woocommerce-product-actions .cart input.button, .woocommerce .cart .woocommerce-product-actions input.button, .woocommerce .woocommerce-product-actions #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .woocommerce-product-actions input {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
     font-size: 13px;
     font-weight: normal;
     height: auto;
     line-height: 1;
-    padding: 9px 15px; }
+    padding: 9px 15px;
+    transition: all .2s ease; }
     .woocommerce .woocommerce-product-actions .button:hover, .woocommerce .woocommerce-product-actions #review_form #respond .form-submit input:hover, .woocommerce #review_form #respond .form-submit .woocommerce-product-actions input:hover {
-      background-color: rgba(255, 255, 255, 0.08); }
+      background-color: #212121;
+      border-color: transparent; }
 
 .products.related {
   margin-bottom: -90px;

@@ -25,9 +25,10 @@
 }
 
 .main-inner {
-	min-height: calc(100vh - 378px);
+	min-height: calc(100vh - 278px);
 
-	padding: 50px;
+	box-sizing: border-box;
+	padding: 30px;
 
 	@media (max-width: $tablet) {
 		padding: 30px;
