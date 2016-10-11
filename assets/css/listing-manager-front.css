@@ -2905,20 +2905,28 @@ form.listing-manager-submission-form fieldset legend {
 .woocommerce nav.woocommerce-pagination .page-numbers {
   border: 0; }
   .woocommerce nav.woocommerce-pagination .page-numbers li {
+    background-color: rgba(0, 0, 0, 0.04);
     border: 0;
-    margin: 0 10px; }
+    height: 42px;
+    margin: 0 12px;
+    width: 42px; }
     .woocommerce nav.woocommerce-pagination .page-numbers li a {
-      color: #252525;
-      font-weight: 700; }
+      color: rgba(37, 37, 37, 0.7);
+      font-weight: 400;
+      line-height: 42px;
+      padding: 0;
+      transition: background-color .2s ease; }
       .woocommerce nav.woocommerce-pagination .page-numbers li a:hover {
-        background-color: transparent;
-        color: #0EDAC9; }
+        background-color: rgba(0, 0, 0, 0.03); }
     .woocommerce nav.woocommerce-pagination .page-numbers li span.current {
-      background-color: transparent;
-      color: #252525;
-      font-weight: 700; }
+      background-color: #0EDAC9;
+      color: #fff;
+      font-weight: 400;
+      line-height: 42px;
+      padding: 0; }
     .woocommerce nav.woocommerce-pagination .page-numbers li .fa {
-      font-size: 11px; }
+      color: rgba(37, 37, 37, 0.5);
+      font-size: 10px; }
 
 .woocommerce .woocommerce-message,
 .woocommerce .woocommerce-error,
