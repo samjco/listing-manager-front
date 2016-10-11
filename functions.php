@@ -23,7 +23,7 @@ function listing_manager_front_fonts() {
 	$font_url = '';
 
 	if ( 'off' !== _x( 'on', 'Google font: on or off', 'listing-manager-front' ) ) {
-		$font_url = add_query_arg( 'family', urlencode(  'Handlee|Open Sans:400,600,700&subset=latin,latin-ext' ), '//fonts.googleapis.com/css' );
+		$font_url = add_query_arg( 'family', urlencode(  'Handlee|Poppins:300,400,500,600,700&subset=latin,latin-ext' ), '//fonts.googleapis.com/css' );
 	}	
 	return $font_url;
 }
