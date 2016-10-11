@@ -1416,7 +1416,8 @@ form.listing-manager-submission-form fieldset legend {
       background-color: #0dccbc; }
     .site-navigation .button a, .site-navigation .woocommerce .cart .button a, .woocommerce .cart .site-navigation .button a, .site-navigation .woocommerce #review_form #respond .form-submit input a, .woocommerce #review_form #respond .form-submit .site-navigation input a {
       color: #fff;
-      line-height: 35px; }
+      line-height: 35px;
+      text-transform: none; }
       .site-navigation .button a:before, .site-navigation .woocommerce .cart .button a:before, .woocommerce .cart .site-navigation .button a:before, .site-navigation .woocommerce #review_form #respond .form-submit input a:before, .woocommerce #review_form #respond .form-submit .site-navigation input a:before {
         display: none !important; }
   .site-navigation .current-menu-item, .site-navigation .current-menu-ancestor {
@@ -1519,6 +1520,7 @@ form.listing-manager-submission-form fieldset legend {
 
 .sub-menu {
   background-color: #212121;
+  border-radius: 3px;
   left: 0;
   list-style: none;
   margin: 0;
@@ -1564,7 +1566,7 @@ form.listing-manager-submission-form fieldset legend {
   .sub-menu a {
     color: rgba(255, 255, 255, 0.85);
     display: block;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 1.5;
     padding: 6px 20px !important;
@@ -1591,7 +1593,7 @@ form.listing-manager-submission-form fieldset legend {
     top: 50px;
     visibility: visible; }
   .user-navigation ul {
-    background-color: #424242;
+    background-color: #212121;
     border-radius: 3px;
     list-style: none;
     margin: 0;
@@ -1602,7 +1604,7 @@ form.listing-manager-submission-form fieldset legend {
     top: 55px;
     transition: all .4s ease;
     visibility: hidden;
-    width: 130px;
+    width: 170px;
     z-index: 9999; }
     .user-navigation ul:after {
       background-color: transparent;
@@ -1614,16 +1616,18 @@ form.listing-manager-submission-form fieldset legend {
       right: 0;
       top: -16px; }
     .user-navigation ul a {
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.85);
       display: block;
       font-size: 12px;
-      padding: 5px 0;
+      padding: 6px 0;
       text-align: right; }
       .user-navigation ul a .fa {
         color: #0EDAC9;
-        font-size: 11px;
+        font-size: 12px;
         margin: 0 0 0 10px;
-        vertical-align: midde; }
+        text-align: center;
+        vertical-align: middle;
+        width: 20px; }
       .user-navigation ul a:hover {
         color: #fff; }
 
@@ -1822,7 +1826,7 @@ form.listing-manager-submission-form fieldset legend {
   padding-left: 1000px;
   padding-right: 1000px;
   margin: -50px -1000px 0 -1000px;
-  max-height: 1100px;
+  max-height: 1000px;
   min-height: 700px;
   position: relative;
   overflow: hidden; }
