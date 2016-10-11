@@ -391,6 +391,7 @@ th {
     margin-top: auto; }
 
 .main-inner {
+  min-height: calc(100vh - 378px);
   padding: 50px; }
   @media (max-width: 48em) {
     .main-inner {
@@ -1714,8 +1715,10 @@ form.listing-manager-submission-form fieldset legend {
   .footer-inner .widget {
     margin: 0;
     padding: 0; }
+  .footer-inner .textwidget {
+    line-height: 30px; }
   .footer-inner .menu {
-    margin: -4px 0 0 0;
+    margin: 0;
     padding: 0; }
     .footer-inner .menu li {
       display: inline-block;
@@ -1729,6 +1732,17 @@ form.listing-manager-submission-form fieldset legend {
       line-height: 30px;
       text-align: center;
       width: 30px; }
+      .footer-inner .menu .fa.fa-facebook {
+        background-color: #365397; }
+      .footer-inner .menu .fa.fa-twitter {
+        background-color: #00a9f1; }
+      .footer-inner .menu .fa.fa-linkedin {
+        background-color: #287bbc; }
+      .footer-inner .menu .fa.fa-google {
+        background-color: #e0452c; }
+  .footer-inner #menu-social a {
+    display: block;
+    height: 30px; }
 
 .footer-left {
   float: left; }

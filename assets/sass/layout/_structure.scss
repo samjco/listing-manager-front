@@ -25,6 +25,8 @@
 }
 
 .main-inner {
+	min-height: calc(100vh - 378px);
+
 	padding: 50px;
 
 	@media (max-width: $tablet) {
