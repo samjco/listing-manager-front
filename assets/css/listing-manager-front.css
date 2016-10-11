@@ -365,36 +365,20 @@ th {
 /**
  * Layout structure & options
  */
-.page-wrapper {
-  display: table;
-  height: 100%;
-  overflow-x: hidden;
-  table-layout: fixed;
-  width: 100%; }
-  .admin-bar .page-wrapper {
-    border-top: 32px solid transparent; }
-    @media (max-width: 782px) {
-      .admin-bar .page-wrapper {
-        border-top-width: 46px; } }
-
-.header-wrapper, .main-wrapper, .footer-wrapper {
-  display: table-row; }
-
-.header-wrapper, .footer-wrapper {
-  height: 1px; }
+.admin-bar .page-wrapper {
+  border-top: 32px solid transparent; }
+  @media (max-width: 782px) {
+    .admin-bar .page-wrapper {
+      border-top-width: 46px; } }
 
 .main {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 3px 3px;
-  display: table;
-  height: calc(100% + 100px);
   margin-top: -100px;
   position: relative;
-  table-layout: fixed;
   width: 100%; }
   .main:after {
     content: " ";
@@ -1003,7 +987,8 @@ select {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
   height: 44px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  width: 100%; }
   select:active, select:focus {
     box-shadow: none;
     outline: 0; }
@@ -2718,21 +2703,21 @@ form.listing-manager-submission-form fieldset legend {
     .woocommerce ul.products li.product .event-countdown {
       background-color: rgba(0, 0, 0, 0.3);
       color: #fff;
-      font-size: 13px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 400;
       padding: 5px 15px;
       position: absolute;
-      right: 15px;
-      top: 15px; }
+      right: 12px;
+      top: 12px; }
     .woocommerce ul.products li.product .price {
       background-color: rgba(0, 0, 0, 0.3);
       color: #fff;
-      font-size: 13px;
-      left: 15px;
-      font-weight: 700;
+      font-size: 12px;
+      left: 12px;
+      font-weight: 400;
       padding: 5px 15px;
       position: absolute;
-      top: 15px; }
+      top: 12px; }
     .woocommerce ul.products li.product h3 {
       color: #252525;
       display: block;
