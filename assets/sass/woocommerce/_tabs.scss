@@ -24,10 +24,6 @@
             color: #fff;
             position: relative;
 
-            a {
-                font-weight: 600;
-            }
-
             &:after {
                 border: 5px solid transparent;
                 border-radius: 0;
@@ -55,7 +51,7 @@
 
         a {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 1;
             padding: 12px 6px;
         }
@@ -79,17 +75,17 @@
             dt {
                 float: left;
                 font-size: 13px;
-                font-weight: 700;
+                font-weight: 500;
                 line-height: 24px;
-                padding: 8px 0;
+                padding: 10px 0;
                 width: 120px;
             }
 
             dd {
-                border-bottom: 1px solid #f4f4f4;
+                border-bottom: 1px solid rgba(#000, .06);
                 line-height: 24px;
                 margin: 0;
-                padding: 9px 0;
+                padding: 10px 0;
 
                 &:last-child {
                     border-bottom: 0;

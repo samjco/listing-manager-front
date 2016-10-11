@@ -372,7 +372,7 @@ th {
       border-top-width: 46px; } }
 
 .main {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
@@ -414,7 +414,7 @@ th {
   margin-right: 0; }
 
 .main-simple-wrapper {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   left: 50%;
@@ -471,7 +471,7 @@ p {
 
 h1, h2, h3, h4 {
   margin: 30px 0;
-  font-weight: 700; }
+  font-weight: 400; }
 
 h1 {
   font-size: 32px; }
@@ -530,7 +530,7 @@ h4 {
   background-size: cover; }
 
 .block {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 50px;
@@ -705,8 +705,9 @@ h4 {
       margin-right: 0; } }
 
 .inquire-form-wrapper {
-  border: 1px solid #f4f4f4;
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 3px;
+  margin: 0 0 30px 0;
   padding: 25px;
   position: relative; }
   .inquire-form-wrapper:after {
@@ -714,22 +715,22 @@ h4 {
     display: block;
     clear: both; }
   .inquire-form-wrapper h2 {
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     font-size: 18px;
     margin: 0 -25px 25px -25px;
     padding: 0 25px 25px 25px; }
   @media (max-width: 48em) {
     .inquire-form-wrapper .button, .inquire-form-wrapper .woocommerce .cart .button, .woocommerce .cart .inquire-form-wrapper .button, .inquire-form-wrapper .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .inquire-form-wrapper input {
       width: 100%; } }
-  .inquire-form-wrapper .inquire-form-fields {
-    margin-bottom: 30px; }
-    @media (min-width: 48em) {
-      .inquire-form-wrapper .inquire-form-fields {
-        width: 31.70732%;
-        float: left;
-        margin-right: 2.43902%; } }
+  @media (min-width: 48em) {
+    .inquire-form-wrapper .inquire-form-fields {
+      width: 31.70732%;
+      float: left;
+      margin-right: 2.43902%; } }
+  .inquire-form-wrapper .inquire-form-fields .form-group {
+    margin-bottom: 25px; }
   .inquire-form-wrapper .form-group-message {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
     @media (min-width: 48em) {
       .inquire-form-wrapper .form-group-message {
         width: 65.85366%;
@@ -741,6 +742,8 @@ h4 {
       height: 182px; }
   .inquire-form-wrapper .button-wrapper {
     clear: both; }
+    .inquire-form-wrapper .button-wrapper button {
+      float: right; }
 
 .inquire-form-login-required {
   background-color: rgba(0, 0, 0, 0.12);
@@ -805,20 +808,21 @@ h4 {
 
 .next-prev-links {
   clear: both;
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase; }
+  font-size: 13px;
+  font-weight: 400;
+  margin: 50px 0 25px 0; }
   .next-prev-links:after {
     content: " ";
     display: block;
     clear: both; }
   .next-prev-links a {
-    color: #252525; }
+    color: rgba(37, 37, 37, 0.7); }
     .next-prev-links a:hover {
       color: #0EDAC9; }
       .next-prev-links a:hover .fa {
         color: #0EDAC9; }
   .next-prev-links .fa {
+    color: rgba(37, 37, 37, 0.5);
     font-size: 8px;
     transition: all .2s ease;
     vertical-align: 1px; }
@@ -1320,7 +1324,7 @@ form.listing-manager-submission-form fieldset legend {
     top: 32px; }
 
 .header-sticky-inner {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto; }
   .header-sticky-inner:after {
@@ -1329,7 +1333,7 @@ form.listing-manager-submission-form fieldset legend {
     clear: both; }
 
 .header-inner {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -1691,7 +1695,7 @@ form.listing-manager-submission-form fieldset legend {
   background-image: linear-gradient(to right, #2A2F35, #444D59); }
 
 .footer {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 30px;
@@ -1887,7 +1891,7 @@ form.listing-manager-submission-form fieldset legend {
     right: 0; }
 
 .hero {
-  max-width: 1170px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto; }
   .hero:after {
@@ -2855,10 +2859,20 @@ form.listing-manager-submission-form fieldset legend {
       border-color: transparent; }
 
 .products.related {
-  margin-bottom: -90px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  margin: 0;
+  padding: 25px;
   position: relative; }
+  .products.related h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    font-size: 18px;
+    margin: 0 -25px 25px -25px;
+    padding: 0 25px 25px 25px; }
   .products.related .products {
     margin: 0; }
+  .products.related .product {
+    margin-bottom: 0 !important; }
 
 .product-return-back {
   font-size: 24px;
@@ -3014,8 +3028,6 @@ form.listing-manager-submission-form fieldset legend {
       background-color: #0EDAC9;
       color: #fff;
       position: relative; }
-      .woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active a {
-        font-weight: 600; }
       .woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li.active:after {
         border: 5px solid transparent;
         border-radius: 0;
@@ -3035,7 +3047,7 @@ form.listing-manager-submission-form fieldset legend {
       display: none; }
     .woocommerce div.product .woocommerce-tabs ul.tabs.wc-tabs li a {
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 1;
       padding: 12px 6px; }
 
@@ -3053,15 +3065,15 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce #content div.product .woocommerce-tabs .panel dl dt {
     float: left;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 24px;
-    padding: 8px 0;
+    padding: 10px 0;
     width: 120px; }
   .woocommerce #content div.product .woocommerce-tabs .panel dl dd {
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     line-height: 24px;
     margin: 0;
-    padding: 9px 0; }
+    padding: 10px 0; }
     .woocommerce #content div.product .woocommerce-tabs .panel dl dd:last-child {
       border-bottom: 0; }
   .woocommerce #content div.product .woocommerce-tabs .panel ul.amenities {

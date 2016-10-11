@@ -214,11 +214,25 @@
 }
 
 .products.related {
-	margin-bottom: -90px;
+	border: 1px solid rgba(#000, .06);
+	border-radius: 3px;
+	margin: 0;
+	padding: 25px;
 	position: relative;
+
+	h2 {
+		border-bottom: 1px solid rgba(#000, .06);
+		font-size: 18px;
+		margin: 0 -25px 25px -25px;
+		padding: 0 25px 25px 25px;
+	}
 
 	.products {
 		margin: 0;
+	}
+
+	.product {
+		margin-bottom: 0 !important;
 	}
 }
 

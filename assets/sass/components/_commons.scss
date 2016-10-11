@@ -277,13 +277,14 @@
 
 .inquire-form-wrapper {
 	@include susy-clearfix();
-	border: 1px solid #f4f4f4;
+	border: 1px solid rgba(#000, .06);
 	border-radius: 3px;
+	margin: 0 0 30px 0;
 	padding: 25px;
 	position: relative;
 
 	h2 {
-		border-bottom: 1px solid #f4f4f4;
+		border-bottom: 1px solid rgba(#000, .06);
 		font-size: 18px;
 		margin: 0 -25px 25px -25px;
 		padding: 0 25px 25px 25px;
@@ -302,7 +303,9 @@
 			@include span(4 of 12);
 		}	
 
-		margin-bottom: 30px;
+		.form-group {
+			margin-bottom: 25px;
+		}
 	}
 
 	.form-group-message {
@@ -311,7 +314,7 @@
 			@include last();
 		}
 
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 
 		textarea {
 			height: 182px;
@@ -320,6 +323,10 @@
 
 	.button-wrapper {
 		clear: both;
+
+		button {
+			float: right;
+		}
 	}
 }
 
@@ -405,13 +412,14 @@
 
 .next-prev-links {
 	@include susy-clearfix();
+
 	clear: both;
-	font-size: 11px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 50px 0 25px 0;
 
 	a {
-		color: $color-black;
+		color: rgba($color-black, .7);
 
 		&:hover {
 			color: $color-primary;
@@ -423,6 +431,7 @@
 	}
 
 	.fa {
+		color: rgba($color-black, .5);
 		font-size: 8px;
 		transition: all .2s ease;
 		vertical-align: 1px;
