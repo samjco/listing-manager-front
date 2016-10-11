@@ -1,11 +1,10 @@
 label {
-	color: $color-black;
+	color: rgba($color-black, .7);
 	cursor: pointer;
 	display: block;
-	font-size: 11px;
-	font-weight: 600;
+	font-size: 13px;
+	font-weight: 500;
 	margin: 0 0 15px 0;
-	text-transform: uppercase;
 
 	.page-template-page-simple & {
 		color: rgba(#fff, .7);
@@ -65,30 +64,61 @@ fieldset {
 	padding: 0;
 }
 
-form.listing-manager-submission-form fieldset {
-	border: 1px solid #f4f4f4 !important;
-	border-radius: 3px;
-	margin: 0 0 30px 0;
-	padding-bottom: 0;
+.required {
+	color: $color-red;
+}
+
+form.listing-manager-submission-form {
+	@include susy-clearfix();
+
+	fieldset {
+		border: 1px solid #f4f4f4;
+		border-radius: 3px;
+		margin: 0 0 30px 0;
+		padding-bottom: 0;
+	}
+
+	button {
+		background-color: $color-primary !important;
+		float: right;
+
+		&:hover {
+			background-color: darken($color-primary, 3%) !important;
+		}
+	}
 }
 
 form.listing-manager-submission-form fieldset legend {
+	box-sizing: border-box;
 	clear: both;
-	color: $color-black !important;
+	color: $color-black;
 	display: block;
 	float: left;
-	font-size: 16px !important;
-	font-weight: 700;
-	margin: 0 0 0 0; 
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 0 0;
 	padding: 25px;
-	text-transform: none !important;
+	text-transform: none;
+	width: 100%;
+
+	a {
+		float: right;
+		font-size: 12px;
+		line-height: 26px;
+	}
 }
 
 .fieldset-content {
 	border-top: 1px solid #f4f4f4;
 	clear: both;
-	margin: 0 0 25px 0;
+	margin: 0;
 	padding: 25px 25px 25px 25px;
+
+	.form-group {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .form-group {
@@ -149,7 +179,7 @@ form.listing-manager-submission-form fieldset legend {
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	position: absolute;	
+	position: absolute;
 	right: 0;
 	z-index: 100;
 
@@ -166,7 +196,7 @@ form.listing-manager-submission-form fieldset legend {
 	}
 
 	img {
-		display: inline-block; 
+		display: inline-block;
 		height: auto;
 		margin: 0 15px 0 0;
 		vertical-align: middle;
@@ -177,5 +207,27 @@ form.listing-manager-submission-form fieldset legend {
 		font-size: 13px;
 		font-weight: 400;
 		vertical-align: middle;
+	}
+}
+
+.listing-manager-submission-opening-hours {
+	width: 100%;
+
+	th {
+		font-weight: 600;
+		padding: 8px 20px;
+		text-align: left;
+	}
+
+	td {
+		padding: 8px 20px;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
 	}
 }
