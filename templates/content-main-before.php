@@ -12,7 +12,7 @@
 
 		<div class="main-inner">
 			<?php if ( ! is_page_template( 'page-front-page.php') ) : ?>
-				<?php get_template_part( 'templates/page-title' ); ?>
+				<?php get_template_part( 'templates/content', 'page-title' ); ?>
 			<?php endif; ?>
 
 			<?php if ( is_active_sidebar( 'content-top' ) ) : ?>

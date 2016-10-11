@@ -223,7 +223,7 @@ function listing_manager_front_add_main_before() {
 		return;
 	}
 
-	get_template_part( 'templates/main-before' );
+	get_template_part( 'templates/content', 'main-before' );
 }
 add_action( 'listing_manager_front_before_main', 'listing_manager_front_add_main_before' );
 
@@ -238,7 +238,7 @@ function listing_manager_front_add_main_after() {
 		return;
 	}
 
-	get_template_part( 'templates/main-after' );
+	get_template_part( 'templates/content', 'main-after' );
 }
 add_action( 'listing_manager_front_after_main', 'listing_manager_front_add_main_after' );
 
@@ -413,7 +413,7 @@ add_action( 'woocommerce_before_shop_loop_item_title', 'listing_manager_front_pr
  * @return string
  */
 function listing_manager_front_product_rating_html( $rating_html, $rating ) {
-	return wc_get_template_html( 'templates/product-rating.php', array(
+	return wc_get_template_html( 'templates/content-product-rating.php', array(
 		'rating_html' 	=> $rating_html,
 		'rating'		=> $rating,
 	) );
@@ -458,7 +458,7 @@ add_action( 'woocommerce_single_product_summary', 'listing_manager_front_woocomm
  * @return void
  */
 function listing_manager_front_woocommerce_share() {
-	get_template_part( 'templates/share' );
+	get_template_part( 'templates/content', 'share' );
 }
 add_action( 'woocommerce_single_product_summary', 'listing_manager_front_woocommerce_share', 100 );
 
@@ -469,7 +469,7 @@ add_action( 'woocommerce_single_product_summary', 'listing_manager_front_woocomm
  * @return void
  */
 function listing_manager_front_woocommerce_add_inquire_form() {
-	get_template_part( 'templates/inquire-form' );
+	get_template_part( 'templates/content', 'inquire-form' );
 }
 add_action( 'woocommerce_after_single_product_summary', 'listing_manager_front_woocommerce_add_inquire_form', 11 );
 
@@ -480,7 +480,7 @@ add_action( 'woocommerce_after_single_product_summary', 'listing_manager_front_w
  * @return void
  */
 function listing_manager_front_woocommerce_add_next_prev() {
-	get_template_part( 'templates/next-prev-links' );
+	get_template_part( 'templates/content', 'next-prev-links' );
 }
 add_action( 'woocommerce_after_single_product_summary', 'listing_manager_front_woocommerce_add_next_prev', 100 );
 
