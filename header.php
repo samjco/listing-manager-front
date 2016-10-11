@@ -26,7 +26,7 @@
 							<?php the_custom_logo(); ?>
 							
 							<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
-								<a href="<?php echo site_url(); ?>">	
+								<a href="<?php echo home_url( '/' ); ?>">
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							<?php endif; ?>							
@@ -94,7 +94,7 @@
 								<?php the_custom_logo(); ?>
 
 								<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
-									<a href="<?php echo site_url(); ?>">
+									<a href="<?php echo home_url( '/' ); ?>">
 										<?php bloginfo( 'name' ); ?>
 									</a>
 								<?php endif; ?>

@@ -1355,6 +1355,11 @@ form.listing-manager-submission-form fieldset legend {
   position: relative;
   white-space: nowrap;
   z-index: 10; }
+  .site-branding img {
+    height: 30px;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+    width: auto; }
 
 .site-title {
   display: inline-block;
@@ -1362,7 +1367,7 @@ form.listing-manager-submission-form fieldset legend {
   .site-title a {
     color: #fff;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     text-decoration: none; }
 
 .site-description {
@@ -1370,7 +1375,7 @@ form.listing-manager-submission-form fieldset legend {
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0 0 0 20px;
   padding: 0 0 0 20px;
   vertical-align: middle; }
@@ -1498,13 +1503,13 @@ form.listing-manager-submission-form fieldset legend {
     margin: 4px 0; }
 
 .site-cart {
-  border-left: 2px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
   color: #fff;
   float: right;
   height: 34px;
   line-height: 34px;
   margin: 0 0 0 30px;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 26px;
   position: relative; }
   @media (max-width: 48em) {
     .site-cart {
@@ -1513,10 +1518,20 @@ form.listing-manager-submission-form fieldset legend {
   .site-cart .fa {
     font-size: 17px; }
   .site-cart .badge {
-    font-size: 12px;
-    font-weight: 700;
+    background-color: #0EDAC9;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 600;
     display: inline-block;
-    padding: 0 3px 0 7px; }
+    height: 18px;
+    line-height: 20px;
+    letter-spacing: -1px;
+    padding: 0;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -4px;
+    width: 18px; }
 
 .sub-menu {
   background-color: #212121;
