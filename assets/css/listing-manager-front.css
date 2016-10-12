@@ -378,8 +378,8 @@ th {
   background-color: #fff;
   border-radius: 3px;
   margin-top: -100px;
-  position: relative;
-  width: 100%; }
+  padding: 30px;
+  position: relative; }
   .main:after {
     content: " ";
     display: block;
@@ -392,8 +392,7 @@ th {
 
 .main-inner {
   min-height: calc(100vh - 246px);
-  box-sizing: border-box;
-  padding: 30px; }
+  box-sizing: border-box; }
 
 .has-sidebar .content {
   width: 74.39024%;
@@ -2973,6 +2972,9 @@ form.listing-manager-submission-form fieldset legend {
     right: -15px;
     top: 10px;
     width: 1px; }
+    @media (max-width: 48em) {
+      .content-box:after {
+        display: none; } }
   .content-box:before {
     background-color: rgba(0, 0, 0, 0.06);
     bottom: -15px;

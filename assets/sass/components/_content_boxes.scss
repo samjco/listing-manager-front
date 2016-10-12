@@ -11,6 +11,10 @@
     right: -15px;
     top: 10px;
     width: 1px;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &:before {
