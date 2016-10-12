@@ -106,9 +106,12 @@
 }
 
 .agent-small {
+  @include susy-clearfix();
+
   border-bottom: 1px solid rgba(#000, .06);
   margin: 0 0 16px 0;
   padding: 0 0 16px 0;
+  position: relative;
 
   &:last-child {
     border-bottom: 0;
@@ -119,10 +122,11 @@
 
 .agent-small-thumbnail {
   border-radius: 50%;
-  float: left;
+  display: inline-block;
   height: 42px;
   margin: 0 12px 0 0;
   overflow: hidden;
+  vertical-align: middle;
   width: 42px;
 
   img {
@@ -132,10 +136,12 @@
 }
 
 .agent-small-content {
+  display: inline-block;
+  vertical-align: middle;
+
   h3 {
     font-size: 14px;
     font-weight: 400;
-    line-height: 42px;
     margin: 0;
     padding: 0;
 
@@ -147,8 +153,17 @@
         content: '\f054';
         font-family: 'FontAwesome';
         font-size: 8px;
-        float: right;
+        position: absolute;
+        right: 0;
+        top: 18px;
       }
     }
+  }
+
+  h4 {
+    color: rgba($color-black, .5);
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
   }
 }

@@ -461,7 +461,7 @@ a {
 
 p {
   color: #6d6d6d;
-  line-height: 24px; }
+  line-height: 2; }
 
 h1, h2, h3, h4 {
   margin: 30px 0;
@@ -3105,7 +3105,12 @@ form.listing-manager-submission-form fieldset legend {
 .agent-small {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   margin: 0 0 16px 0;
-  padding: 0 0 16px 0; }
+  padding: 0 0 16px 0;
+  position: relative; }
+  .agent-small:after {
+    content: " ";
+    display: block;
+    clear: both; }
   .agent-small:last-child {
     border-bottom: 0;
     margin-bottom: 0;
@@ -3113,29 +3118,39 @@ form.listing-manager-submission-form fieldset legend {
 
 .agent-small-thumbnail {
   border-radius: 50%;
-  float: left;
+  display: inline-block;
   height: 42px;
   margin: 0 12px 0 0;
   overflow: hidden;
+  vertical-align: middle;
   width: 42px; }
   .agent-small-thumbnail img {
     display: block;
     max-width: 42px; }
 
-.agent-small-content h3 {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 42px;
-  margin: 0;
-  padding: 0; }
-  .agent-small-content h3 a {
-    color: #252525; }
-    .agent-small-content h3 a:after {
-      color: #0EDAC9;
-      content: '\f054';
-      font-family: 'FontAwesome';
-      font-size: 8px;
-      float: right; }
+.agent-small-content {
+  display: inline-block;
+  vertical-align: middle; }
+  .agent-small-content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0; }
+    .agent-small-content h3 a {
+      color: #252525; }
+      .agent-small-content h3 a:after {
+        color: #0EDAC9;
+        content: '\f054';
+        font-family: 'FontAwesome';
+        font-size: 8px;
+        position: absolute;
+        right: 0;
+        top: 18px; }
+  .agent-small-content h4 {
+    color: rgba(37, 37, 37, 0.5);
+    font-size: 12px;
+    margin: 0;
+    padding: 0; }
 
 .single-company .post-content > img {
   display: block;
