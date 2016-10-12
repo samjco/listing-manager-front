@@ -64,6 +64,7 @@ add_action( 'wp_enqueue_scripts', 'listing_manager_front_enqueue' );
 function listing_manager_front_sidebars() {
 	$sidebars = array(
 		'sidebar-1' 			=> esc_html__( 'Primary', 'listing-manager-front' ),
+        'main-top' 			    => esc_html__( 'Main Top', 'listing-manager-front' ),
 		'content-top' 			=> esc_html__( 'Content Top', 'listing-manager-front' ),
 		'product' 				=> esc_html__( 'Product', 'listing-manager-front' ),
 		'footer-left' 		    => esc_html__( 'Footer Left ', 'listing-manager-front' ),
@@ -106,6 +107,10 @@ function listing_manager_front_body_classes( $body_class ) {
 	if ( is_active_sidebar( 'sidebar-1' ) ) {
 		$body_class[] = 'has-sidebar';
 	}
+
+	if ( is_active_sidebar( 'main-top' ) ) {
+	    $body_class[] = 'has-main-top';
+    }
 
 	if ( class_exists( 'WooCommerce' ) ) {
 		$body_class[] = 'woocommerce';

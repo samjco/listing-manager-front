@@ -1,13 +1,8 @@
-.map-wrapper {
-    padding: 25px;
-    border: 1px solid $color-body-background;
-    border-bottom: 0;
-    border-radius: 3px 3px 0 0;
-
-    @media (max-width: $tablet) {
-    	overflow: hidden;
-		padding: 0;
-	}
+.main-top {
+  .map-wrapper {
+    background-color: $color-body-background;
+    margin-top: -173px;
+  }
 }
 
 .map-container, .map-wrapper {
@@ -16,9 +11,16 @@
 }
 
 .map-content {
+  @include container($width-page);
   bottom: 50px;
-  left: 50px;
+  left: 50%;
   position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+
+  .main-top & {
+    bottom: 120px
+  }
 }
 
 .marker {
@@ -285,7 +287,7 @@
   display: inline-block;
   height: 30px;
   line-height: 30px;
-  margin: 0 -4px 0 0;
+  margin: 0 -5px 0 0;
   min-width: 30px;
   text-align: center;
   transition: all .15s linear;
@@ -297,7 +299,7 @@
 }
 
 .map-actions span {
-  font-size: 13px;
+  font-size: 11px;
   padding: 0 15px;
 }
 
@@ -306,17 +308,19 @@
 }
 
 .map-actions a:before {
-  border-left: 1px solid #323232;
+  bottom: 0;
+  border-left: 1px solid rgba(#fff, .1);
   content: "";
   display: block;
   position: absolute;
-  height: 20px;
-  margin-top: 5px;
+  top: 0;
 }
 
 .map-actions-group {
+  border-radius: 3px;
   display: inline-block;
   margin: 0 12px 0 0;
+  overflow: hidden;
 }
 
 .map-actions-group:hover a:before {
@@ -358,4 +362,54 @@
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+#map-control-current-position {
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    -webkit-font-smoothing: antialiased;
+    content: '\f124';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    margin: 0 16px 0 10px;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+#map-control-zoom-in {
+  &:before {
+    display: none;
+  }
+
+  &:after {
+    -webkit-font-smoothing: antialiased;
+    content: '\f067';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    margin: 0 16px 0 10px;
+  }
+
+  span {
+    display: none;
+  }
+}
+
+#map-control-zoom-out {
+  &:after {
+    -webkit-font-smoothing: antialiased;
+    content: '\f068';
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    margin: 0 16px 0 10px;
+  }
+
+  span {
+    display: none;
+  }
 }

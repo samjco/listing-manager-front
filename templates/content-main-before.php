@@ -1,4 +1,10 @@
-<div class="main-wrapper">	
+<?php if ( is_active_sidebar( 'main-top' ) ) : ?>
+	<div class="main-top">
+		<?php dynamic_sidebar( 'main-top' ); ?>
+	</div><!-- /.content-top -->
+<?php endif; ?>
+
+<div class="main-wrapper">
 	<div class="main">
 		<?php if ( ! is_page_template( 'page-front-page.php') && class_exists( 'WooCommerce' ) ) : ?>
 			<?php woocommerce_breadcrumb(); ?>

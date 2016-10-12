@@ -11,12 +11,22 @@
 	}
 
 	.separator {
+		font-size: 10px;
 		margin: 0 15px;
+		vertical-align: middle;
 	}
 
 	@media (max-width: $tablet) {
 		.single-product & {
 			display: none;
 		}
+	}
+
+	.has-main-top & {
+		background-color: rgba($color-header-background, .9);
+		margin: 0 -1200px;
+		padding: 9px 1170px;
+		top: -500px;
+		width: 100%;
 	}
 }

@@ -2351,24 +2351,29 @@ form.listing-manager-submission-form fieldset legend {
   font-weight: 600;
   text-align: right; }
 
-.map-wrapper {
-  padding: 25px;
-  border: 1px solid #fafafa;
-  border-bottom: 0;
-  border-radius: 3px 3px 0 0; }
-  @media (max-width: 48em) {
-    .map-wrapper {
-      overflow: hidden;
-      padding: 0; } }
+.main-top .map-wrapper {
+  background-color: #fafafa;
+  margin-top: -173px; }
 
 .map-container, .map-wrapper {
   height: 500px;
   position: relative; }
 
 .map-content {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 50px;
-  left: 50px;
-  position: absolute; }
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%; }
+  .map-content:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .main-top .map-content {
+    bottom: 120px; }
 
 .marker {
   background-image: url("../../../../plugins/listing-manager/assets/img/marker.png");
@@ -2605,7 +2610,7 @@ form.listing-manager-submission-form fieldset legend {
   display: inline-block;
   height: 30px;
   line-height: 30px;
-  margin: 0 -4px 0 0;
+  margin: 0 -5px 0 0;
   min-width: 30px;
   text-align: center;
   transition: all .15s linear; }
@@ -2615,23 +2620,25 @@ form.listing-manager-submission-form fieldset legend {
   color: #fff; }
 
 .map-actions span {
-  font-size: 13px;
+  font-size: 11px;
   padding: 0 15px; }
 
 .map-actions a:first-of-type:before {
   content: none; }
 
 .map-actions a:before {
-  border-left: 1px solid #323232;
+  bottom: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
   content: "";
   display: block;
   position: absolute;
-  height: 20px;
-  margin-top: 5px; }
+  top: 0; }
 
 .map-actions-group {
+  border-radius: 3px;
   display: inline-block;
-  margin: 0 12px 0 0; }
+  margin: 0 12px 0 0;
+  overflow: hidden; }
 
 .map-actions-group:hover a:before {
   height: 30px;
@@ -2669,6 +2676,42 @@ form.listing-manager-submission-form fieldset legend {
   position: absolute;
   top: 50%;
   transform: translateX(-50%) translateY(-50%); }
+
+#map-control-current-position:before {
+  display: none; }
+
+#map-control-current-position:after {
+  -webkit-font-smoothing: antialiased;
+  content: '\f124';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  margin: 0 16px 0 10px; }
+
+#map-control-current-position span {
+  display: none; }
+
+#map-control-zoom-in:before {
+  display: none; }
+
+#map-control-zoom-in:after {
+  -webkit-font-smoothing: antialiased;
+  content: '\f067';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  margin: 0 16px 0 10px; }
+
+#map-control-zoom-in span {
+  display: none; }
+
+#map-control-zoom-out:after {
+  -webkit-font-smoothing: antialiased;
+  content: '\f068';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  margin: 0 16px 0 10px; }
+
+#map-control-zoom-out span {
+  display: none; }
 
 .listing-manager-social-networks {
   margin-bottom: -25px; }
@@ -3294,10 +3337,18 @@ form.listing-manager-submission-form fieldset legend {
     color: rgba(255, 255, 255, 0.7) !important;
     text-decoration: none; }
   .woocommerce-breadcrumb .separator {
-    margin: 0 15px; }
+    font-size: 10px;
+    margin: 0 15px;
+    vertical-align: middle; }
   @media (max-width: 48em) {
     .single-product .woocommerce-breadcrumb {
       display: none; } }
+  .has-main-top .woocommerce-breadcrumb {
+    background-color: rgba(63, 67, 72, 0.9);
+    margin: 0 -1200px;
+    padding: 9px 1170px;
+    top: -500px;
+    width: 100%; }
 
 @media (min-width: 48em) {
   #content ul.products li.product {
