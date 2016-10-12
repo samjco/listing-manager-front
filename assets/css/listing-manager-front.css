@@ -2356,7 +2356,7 @@ form.listing-manager-submission-form fieldset legend {
   position: absolute; }
 
 .marker {
-  background-image: url("../img/marker.png");
+  background-image: url("../../../../plugins/listing-manager/assets/img/marker.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 51px;
