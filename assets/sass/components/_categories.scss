@@ -8,10 +8,13 @@
 	> li {
 		margin-bottom: 30px;
 		margin-top: 30px;
-		@include span(2 of 10); 
 
-		&:nth-child(5n+1) {
-			@include last();
+		@media (min-width: $desktop) {
+			@include span(2 of 10);
+
+			&:nth-child(5n+1) {
+				@include last();
+			}
 		}
 
 		> ul {

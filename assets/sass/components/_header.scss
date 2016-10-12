@@ -22,7 +22,7 @@
 .header-sticky {
 	background-color: rgba($color-black, .85);
 	left: 0;
-	padding: 15px 50px;
+	padding: 15px 30px;
 	position: fixed;
 	right: 0;
 	top: 0;
@@ -61,17 +61,7 @@
 
 	color: #fff;
 	margin: 0 auto;
-	padding: 24px 50px;
-
-	@media (max-width: $desktop) {
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
-	@media (max-width: $tablet) {
-		padding-left: 15px; 
-		padding-right: 15px;
-	}	
+	padding: 24px 30px;
 }
 
 .site-branding {
