@@ -377,6 +377,7 @@ th {
   margin-right: auto;
   background-color: #fff;
   border-radius: 3px;
+  box-sizing: border-box;
   margin-top: -100px;
   padding: 30px;
   position: relative; }
@@ -386,7 +387,7 @@ th {
     clear: both; }
   .page-template-page-front-page .main {
     background-color: transparent;
-    box-shadow: none;
+    box-sizing: content-box;
     height: auto;
     margin-top: auto; }
 
@@ -1798,16 +1799,17 @@ form.listing-manager-submission-form fieldset legend {
     .page-title {
       width: 100%; } }
   .page-title h1 {
-    font-size: 36px;
-    font-weight: 400;
+    font-size: 32px;
+    font-weight: 300;
     margin: 0;
     padding: 0; }
     @media (max-width: 48em) {
       .page-title h1 {
         font-size: 22px; } }
   .page-title p {
-    color: #6d6d6d;
+    color: rgba(37, 37, 37, 0.7);
     font-size: 16px;
+    line-height: 2;
     margin: 30px 0 0 0; }
   .page-title:before {
     background-color: rgba(0, 0, 0, 0.1);
@@ -1853,24 +1855,27 @@ form.listing-manager-submission-form fieldset legend {
 
 .listing-manager-filter-form {
   background-color: #fafafa;
-  border-radius: 3px;
-  margin-bottom: 30px;
-  padding: 25px 25px 5px 25px; }
+  border-radius: 3px; }
   .listing-manager-filter-form:after {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 48em) {
-    .listing-manager-filter-form .form-group {
-      width: 23.17073%;
-      float: left;
-      margin-right: 2.43902%; }
-      .listing-manager-filter-form .form-group:nth-child(4n) {
-        float: right;
-        margin-right: 0; } }
-  @media (max-width: 48em) {
-    .listing-manager-filter-form .form-group:last-child {
-      margin-bottom: 20px; } }
+  .content .listing-manager-filter-form, .content-top .listing-manager-filter-form {
+    margin-bottom: 30px;
+    padding: 25px 25px 5px 25px; }
+    @media (min-width: 48em) {
+      .content .listing-manager-filter-form .form-group, .content-top .listing-manager-filter-form .form-group {
+        width: 23.17073%;
+        float: left;
+        margin-right: 2.43902%; }
+        .content .listing-manager-filter-form .form-group:nth-child(4n), .content-top .listing-manager-filter-form .form-group:nth-child(4n) {
+          float: right;
+          margin-right: 0; } }
+    @media (max-width: 48em) {
+      .content .listing-manager-filter-form .form-group:last-child, .content-top .listing-manager-filter-form .form-group:last-child {
+        margin-bottom: 20px; } }
+  .sidebar .listing-manager-filter-form {
+    padding: 16px 16px 6px 16px; }
 
 .hero-wrapper {
   background-color: #3f4348;
@@ -2233,12 +2238,25 @@ form.listing-manager-submission-form fieldset legend {
     margin: 0;
     padding: 0; }
     .sidebar .widget ul li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-      padding: 12px 0; }
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 12px 0;
+      position: relative; }
       .sidebar .widget ul li:last-child {
         border-bottom: 0;
         margin-bottom: 0;
         padding-bottom: 0; }
+      .sidebar .widget ul li > span {
+        color: rgba(37, 37, 37, 0.5);
+        display: block;
+        font-size: 11px;
+        position: absolute;
+        right: 0;
+        top: 16px; }
+      .sidebar .widget ul li > ul {
+        border-top: 1px solid rgba(0, 0, 0, 0.06);
+        margin-top: 12px; }
+        .sidebar .widget ul li > ul a {
+          padding-left: 20px; }
     .sidebar .widget ul a {
       color: rgba(37, 37, 37, 0.7);
       display: block;

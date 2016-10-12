@@ -16,5 +16,7 @@
 			<?php endif; ?>
 
 			<?php if ( is_active_sidebar( 'content-top' ) ) : ?>
-				<?php dynamic_sidebar( 'content-top' ); ?>
+				<div class="content-top">
+					<?php dynamic_sidebar( 'content-top' ); ?>
+				</div><!-- /.content-top -->
 			<?php endif; ?>

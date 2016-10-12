@@ -23,13 +23,32 @@
 			padding: 0;
 
 			li {
-				border-bottom: 1px solid rgba(#000, .08);
+				border-bottom: 1px solid rgba(#000, .06);
 				padding: 12px 0;
+				position: relative;
 
 				&:last-child {
 					border-bottom: 0;
 					margin-bottom: 0;
 					padding-bottom: 0;
+				}
+
+				> span {
+					color: rgba($color-black, .5);
+					display: block;
+					font-size: 11px;
+					position: absolute;
+					right: 0;
+					top: 16px;
+				}
+
+				> ul {
+					border-top: 1px solid rgba(#000, .06);
+					margin-top: 12px;
+					
+					a {
+						padding-left: 20px;
+					}
 				}
 			}
 

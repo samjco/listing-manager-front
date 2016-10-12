@@ -13,13 +13,14 @@
 
 	background-color: #fff;
 	border-radius: 3px;
+	box-sizing: border-box;;
 	margin-top: -100px;
 	padding: 30px;
 	position: relative;
 
 	.page-template-page-front-page & { 
 		background-color: transparent;
-		box-shadow: none;
+		box-sizing: content-box;;
 		height: auto;
 		margin-top: auto;
 	}
