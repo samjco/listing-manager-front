@@ -3184,7 +3184,7 @@ form.listing-manager-submission-form fieldset legend {
   .company .post-social-simple a {
     color: rgba(37, 37, 37, 0.7); }
 
-.single-company .post-social {
+.single-company .post-social-simple {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   margin: 0 0 20px 0;
   padding: 0 0 20px 0; }
