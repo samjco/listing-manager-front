@@ -3137,6 +3137,121 @@ form.listing-manager-submission-form fieldset legend {
       font-size: 8px;
       float: right; }
 
+.single-company .post-content > img {
+  display: block;
+  float: left;
+  height: auto;
+  margin: 0 25px 0 0;
+  width: 274px; }
+
+.single-company .post-social-simple,
+.company .post-social-simple {
+  margin: 20px 0 0 0; }
+  .single-company .post-social-simple ul,
+  .company .post-social-simple ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .single-company .post-social-simple li,
+  .company .post-social-simple li {
+    display: inline-block; }
+    .single-company .post-social-simple li:after,
+    .company .post-social-simple li:after {
+      color: rgba(37, 37, 37, 0.2);
+      content: '/';
+      font-size: 10px;
+      margin: 0 15px;
+      vertical-align: middle; }
+    .single-company .post-social-simple li:last-child:after,
+    .company .post-social-simple li:last-child:after {
+      display: none; }
+  .single-company .post-social-simple a,
+  .company .post-social-simple a {
+    color: rgba(37, 37, 37, 0.7); }
+
+.single-company .post-social {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0; }
+
+.single-company .post-overview,
+.company .post-overview {
+  margin: 20px 0 0 0; }
+  .single-company .post-overview dl,
+  .company .post-overview dl {
+    color: rgba(37, 37, 37, 0.7);
+    margin: 0;
+    line-height: 30px; }
+  .single-company .post-overview dt,
+  .company .post-overview dt {
+    color: rgba(37, 37, 37, 0.5);
+    float: left;
+    line-height: 30px;
+    width: 120px; }
+
+.company {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0 0 25px 0;
+  padding: 0 0 25px 0; }
+  .company:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .company .post-thumbnail {
+    float: left;
+    margin: 0 25px 0 0; }
+    .company .post-thumbnail img {
+      display: block;
+      height: auto;
+      width: 274px; }
+  .company .post-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    padding: 0; }
+    .company .post-title a {
+      color: #252525; }
+  .company .post-subtitle {
+    color: rgba(37, 37, 37, 0.5);
+    font-size: 14px;
+    margin: 0 0;
+    padding: 0; }
+
+.company-small {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0; }
+  .company-small:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+
+.company-small-thumbnail {
+  border-radius: 50%;
+  float: left;
+  height: 42px;
+  margin: 0 12px 0 0;
+  overflow: hidden;
+  width: 42px; }
+  .company-small-thumbnail img {
+    display: block;
+    max-width: 42px; }
+
+.company-small-content h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 42px;
+  margin: 0;
+  padding: 0; }
+  .company-small-content h3 a {
+    color: #252525; }
+    .company-small-content h3 a:after {
+      color: #0EDAC9;
+      content: '\f054';
+      font-family: 'FontAwesome';
+      font-size: 8px;
+      float: right; }
+
 /**
  * WooCommerce
  */
