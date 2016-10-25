@@ -1264,13 +1264,13 @@ form.listing-manager-submission-form fieldset legend {
   width: 100%; }
   .main .content table th {
     border-bottom: 1px solid #f4f4f4;
-    font-size: 15px !important;
+    font-size: 15px;
     font-weight: 700;
     text-align: left; }
     .main .content table th.empty {
       background-color: #fff; }
   .main .content table th, .main .content table td {
-    padding: 15px 25px !important; }
+    padding: 15px 25px; }
   .main .content table td {
     border-bottom: 1px solid #f4f4f4;
     transition: background-color .2s ease;
@@ -1278,7 +1278,7 @@ form.listing-manager-submission-form fieldset legend {
     .main .content table td input {
       width: 100%; }
     .main .content table td.day-name {
-      font-weight: 400 !important; }
+      font-weight: 400; }
   .main .content table h3 {
     font-size: 14px;
     font-weight: 600;
@@ -1310,7 +1310,7 @@ form.listing-manager-submission-form fieldset legend {
     padding: 12px 15px; }
   .main .content table .button.remove, .main .content table .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .main .content table input.remove {
     background-color: #D80C00;
-    color: #fff !important;
+    color: #fff;
     width: auto; }
     .main .content table .button.remove:hover, .main .content table .woocommerce #review_form #respond .form-submit input.remove:hover, .woocommerce #review_form #respond .form-submit .main .content table input.remove:hover {
       background-color: #D80C00; }
@@ -3310,6 +3310,27 @@ form.listing-manager-submission-form fieldset legend {
       font-size: 8px;
       float: right; }
 
+.opening-hours-status {
+  background-color: #0EDAC9;
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 30px 0;
+  padding: 6px 12px; }
+  .opening-hours-status.closed {
+    background-color: #252525; }
+
+.main .content table.opening-hours {
+  margin: 0;
+  width: 100%; }
+  .main .content table.opening-hours th {
+    font-size: 13px;
+    font-weight: 500; }
+  .main .content table.opening-hours tr td:first-child, .main .content table.opening-hours tr th:first-child {
+    padding-left: 0; }
+
 /**
  * WooCommerce
  */
@@ -3467,8 +3488,9 @@ form.listing-manager-submission-form fieldset legend {
 
 .woocommerce div.product p.price {
   border-bottom: 1px solid #f4f4f4;
-  color: #B7B7B7;
+  color: #252525;
   font-size: 24px;
+  font-weight: 300;
   padding: 14px 0; }
 
 .product_meta a {
@@ -3697,7 +3719,7 @@ form.listing-manager-submission-form fieldset legend {
       font-size: 13px;
       font-weight: 400;
       line-height: 1;
-      padding: 12px 6px; }
+      padding: 12px 0; }
 
 .woocommerce #content div.product .woocommerce-tabs .panel {
   border: 1px solid #f4f4f4;

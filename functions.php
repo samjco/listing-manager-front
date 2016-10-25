@@ -446,17 +446,6 @@ function listing_manager_front_woocommerce_pagination_args( $args ) {
 add_filter( 'woocommerce_pagination_args', 'listing_manager_front_woocommerce_pagination_args' );
 
 /**
- * Return back on product detail
- *
- * @see woocommerce_single_product_summary
- * @return void
- */
-function listing_manager_front_woocommerce_return_back() {
-	echo '<div class="product-return-back"><a href="' . get_permalink( wc_get_page_id( 'shop' ) ) . '"><i class="fa fa-long-arrow-left"></i></a></div>';
-}
-add_action( 'woocommerce_single_product_summary', 'listing_manager_front_woocommerce_return_back', 11 );
-
-/**
  * Adds share buttons
  *
  * @see woocommerce_single_product_summary

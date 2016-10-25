@@ -5,7 +5,7 @@
 
     th {
         border-bottom: 1px solid #f4f4f4;
-        font-size: 15px !important;
+        font-size: 15px;
         font-weight: 700;
         text-align: left;
 
@@ -15,7 +15,7 @@
     }
 
     th, td {        
-        padding: 15px 25px !important;
+        padding: 15px 25px;
     }
 
 
@@ -29,7 +29,7 @@
         }
 
         &.day-name {
-            font-weight: 400 !important;
+            font-weight: 400;
         }
     }
 
@@ -90,7 +90,7 @@
 
     .button.remove {
         background-color: $color-red;
-        color: #fff !important;
+        color: #fff;
         width: auto;
 
         &:hover {
