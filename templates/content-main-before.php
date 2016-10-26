@@ -26,3 +26,7 @@
 					<?php dynamic_sidebar( 'content-top' ); ?>
 				</div><!-- /.content-top -->
 			<?php endif; ?>
+
+			<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+				<?php wc_print_notices(); ?>
+			<?php endif; ?>

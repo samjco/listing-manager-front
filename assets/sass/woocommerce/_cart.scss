@@ -17,16 +17,36 @@
         display: none;
     }
 
+    strong {
+        font-weight: 500;
+    }
+
     table {
-        border: 1px solid #f4f4f4;
+        background-color: rgba(#000, .01);
+        border: 1px dashed rgba(#000, .06);
         border-radius: 0;
+        margin: 0;
+
+        th {
+            color: rgba($color-black, .5);
+            font-size: 12px;
+            font-weight: 500;
+        }
 
         th, td {
             background-color: transparent;
-            border-color: #f4f4f4;
-            padding-bottom: 34px;
-            padding-top: 34px;
+            border: 0 !important;
+            border-bottom: 1px dashed rgba(#000, .06) !important;
+            padding: 20px 28px;
             vertical-align: middle;
+        }
+
+        tr {
+            &:last-child {
+                th, td {
+                    border-bottom: 0 !important;
+                }
+            }
         }
     }
 }
@@ -53,16 +73,58 @@
     padding-bottom: 30px;
     padding-top: 30px;
 
+    &.product-remove {
+        padding-left: 0;
+        padding-right: 0;
+
+        a.remove {
+            color: $color-red !important;
+            font-size: 0;
+            font-weight: 400;
+            height: auto;
+            width: auto;
+
+            &:hover {
+                background-color: transparent;
+                color: $color-red !important;
+            }
+
+            &:before {
+                content: '\f00d';
+                display: block;
+                font-family: 'FontAwesome';
+                font-size: 12px;
+            }
+        }
+    }
+
     &.product-name {
         font-weight: 700;
 
         a {
-            color: $color-primary;
+            color: $color-black;
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            margin: 0;
+
+            a {
+                color: $color-primary;
+                text-decoration: underline;
+            }
         }
     }
 
     &.product-thumbnail {
+        padding: 0;
+        width: 1px;
+
         img {
+            display: block;
+            margin: 0;
             width: 60px;
         }
     }
@@ -80,7 +142,7 @@
  */
 .woocommerce-cart table.cart td.actions .coupon .input-text {
     font-size: 13px;
-    height: 37px;
+    padding: 0 15px;
     width: 200px;
 }
 
@@ -89,13 +151,6 @@
  */
 .woocommerce .cart .button, .woocommerce .cart input.button {
     @extend .button;
-    color: #fff;
-    float: right;
-    font-size: 13px !important;
-    height: auto !important;
-    line-height: 1 !important;
-    padding: 12px 25px !important;
-    width: auto;
 }
 
 /**
@@ -103,11 +158,14 @@
  */
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
     @extend .button-primary;
+
+    -webkit-font-smoothing: initial;
+    float: right;
     font-size: 13px;
-    font-weight: 700;
-    height: auto;
-    line-height: 1;
-    padding: 13px 0 12px 0;
+    font-weight: 500;
+    line-height: 44px;
+    height: 44px;
+    padding: 0 25px;
 }
 
 .woocommerce-checkout-review-order-table {

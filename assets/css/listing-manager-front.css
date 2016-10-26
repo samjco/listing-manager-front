@@ -1129,6 +1129,7 @@ form.listing-manager-submission-form fieldset legend {
 .woocommerce a.button, .woocommerce .cart a.button,
 .woocommerce button.button, .woocommerce .cart button.button,
 .woocommerce input.button, .woocommerce .cart input.button, .woocommerce #review_form #respond .form-submit input,
+.woocommerce input.button:disabled[disabled], .woocommerce #review_form #respond .form-submit input:disabled[disabled],
 .button:not(.menu-item),
 .woocommerce .cart .button:not(.menu-item),
 .woocommerce #review_form #respond .form-submit input:not(.menu-item), .woocommerce button.button:disabled[disabled] {
@@ -1137,7 +1138,7 @@ form.listing-manager-submission-form fieldset legend {
   border-radius: 3px;
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   height: 44px;
   line-height: 44px;
@@ -1149,6 +1150,7 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce a.button:hover,
   .woocommerce button.button:hover,
   .woocommerce input.button:hover, .woocommerce #review_form #respond .form-submit input:hover,
+  .woocommerce input.button:disabled[disabled]:hover, .woocommerce #review_form #respond .form-submit input:disabled[disabled]:hover,
   .button:not(.menu-item):hover,
   .woocommerce .cart input.button:not(.menu-item):hover,
   .woocommerce #review_form #respond .form-submit input:not(.menu-item):hover, .woocommerce button.button:disabled[disabled]:hover {
@@ -1159,6 +1161,8 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce button.button:focus,
   .woocommerce input.button:active, .woocommerce #review_form #respond .form-submit input:active,
   .woocommerce input.button:focus, .woocommerce #review_form #respond .form-submit input:focus,
+  .woocommerce input.button:disabled[disabled]:active, .woocommerce #review_form #respond .form-submit input:disabled[disabled]:active,
+  .woocommerce input.button:disabled[disabled]:focus, .woocommerce #review_form #respond .form-submit input:disabled[disabled]:focus,
   .button:not(.menu-item):active,
   .woocommerce .cart input.button:not(.menu-item):active,
   .woocommerce #review_form #respond .form-submit input:not(.menu-item):active,
@@ -1170,7 +1174,8 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce a.button .description,
   .woocommerce button.button .description,
   .woocommerce input.button .description, .woocommerce #review_form #respond .form-submit input .description,
-  .button:not(.menu-item) .description, .woocommerce .cart .button:not(.menu-item) .description, .woocommerce #review_form #respond .form-submit input:not(.menu-item) .description, .woocommerce button.button:disabled[disabled] .description {
+  .woocommerce input.button:disabled[disabled] .description, .woocommerce #review_form #respond .form-submit input:disabled[disabled] .description,
+  .button:not(.menu-item) .description, .woocommerce .cart .button:not(.menu-item) .description, .woocommerce .cart input.button:not(.menu-item) .description, .woocommerce #review_form #respond .form-submit input:not(.menu-item) .description, .woocommerce button.button:disabled[disabled] .description {
     color: #fff;
     display: block;
     font-family: 'Handlee', 'Arial', sans-serif;
@@ -1187,11 +1192,13 @@ form.listing-manager-submission-form fieldset legend {
       .woocommerce a.button .description, .woocommerce .cart a.button .description,
       .woocommerce button.button .description, .woocommerce .cart button.button .description,
       .woocommerce input.button .description, .woocommerce .cart input.button .description, .woocommerce #review_form #respond .form-submit input .description,
+      .woocommerce input.button:disabled[disabled] .description, .woocommerce #review_form #respond .form-submit input:disabled[disabled] .description,
       .button:not(.menu-item) .description, .woocommerce .cart .button:not(.menu-item) .description, .woocommerce .cart input.button:not(.menu-item) .description, .woocommerce #review_form #respond .form-submit input:not(.menu-item) .description, .woocommerce button.button:disabled[disabled] .description {
         display: none; } }
     .woocommerce a.button .description:after,
     .woocommerce button.button .description:after,
     .woocommerce input.button .description:after, .woocommerce #review_form #respond .form-submit input .description:after,
+    .woocommerce input.button:disabled[disabled] .description:after, .woocommerce #review_form #respond .form-submit input:disabled[disabled] .description:after,
     .button:not(.menu-item) .description:after, .woocommerce #review_form #respond .form-submit input:not(.menu-item) .description:after, .woocommerce button.button:disabled[disabled] .description:after {
       background-image: url("../img/arrow.png");
       background-repeat: no-repeat;
@@ -1299,7 +1306,7 @@ form.listing-manager-submission-form fieldset legend {
       display: block;
       height: auto;
       margin: 0;
-      max-width: 60px; }
+      max-width: 42px; }
   .main .content table .actions-wrapper {
     width: 1px;
     white-space: nowrap; }
@@ -1812,7 +1819,7 @@ form.listing-manager-submission-form fieldset legend {
     line-height: 2;
     margin: 30px 0 0 0; }
   .page-title:before {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.06);
     bottom: 0;
     content: '';
     display: block;
@@ -1820,21 +1827,10 @@ form.listing-manager-submission-form fieldset legend {
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: 80%; }
+    width: 25%; }
     @media (max-width: 48em) {
       .page-title:before {
         width: 100%; } }
-  .page-title:after {
-    background-color: #fff;
-    border: 1px solid #0EDAC9;
-    bottom: -10px;
-    content: '';
-    display: block;
-    height: 19px;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%) rotate(-45deg);
-    width: 19px; }
 
 .page-header {
   padding: 40px 0;
@@ -2987,14 +2983,22 @@ form.listing-manager-submission-form fieldset legend {
       z-index: 1; }
 
 .listing-manager-table-list {
+  margin: 0 0 30px 0;
   width: 100%; }
   .listing-manager-table-list h3 {
+    line-height: 1;
     margin: 0;
     padding: 0; }
     .listing-manager-table-list h3 a {
       color: #252525;
-      font-size: 20px;
-      font-weight: 400; }
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1; }
+  .listing-manager-table-list tbody tr:last-child td {
+    border-bottom: 0; }
+  .listing-manager-table-list th {
+    font-size: 13px;
+    font-weight: 500; }
   .listing-manager-table-list th, .listing-manager-table-list td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.02);
     padding: 20px;
@@ -3004,19 +3008,44 @@ form.listing-manager-submission-form fieldset legend {
     .listing-manager-table-list th:last-child, .listing-manager-table-list td:last-child {
       padding-right: 0; }
   .listing-manager-table-list .thumbnail-wrapper {
-    width: 80px; }
+    padding-right: 0;
+    width: 48px; }
     .listing-manager-table-list .thumbnail-wrapper img {
       display: block;
       height: auto;
-      width: 80px; }
+      width: 48px; }
+  .listing-manager-table-list .featured-wrapper {
+    text-align: center;
+    width: 1px; }
+    .listing-manager-table-list .featured-wrapper .featured {
+      font-size: 0; }
+      .listing-manager-table-list .featured-wrapper .featured.yes:after, .listing-manager-table-list .featured-wrapper .featured.no:after {
+        -webkit-font-smoothing: antialiased;
+        display: block;
+        font-family: 'FontAwesome';
+        font-size: 15px; }
+      .listing-manager-table-list .featured-wrapper .featured.yes:after {
+        content: '\f005'; }
+      .listing-manager-table-list .featured-wrapper .featured.no:after {
+        content: '\f006'; }
+  .listing-manager-table-list .status-wrapper, .listing-manager-table-list .package-wrapper, .listing-manager-table-list .actions-wrapper {
+    text-align: right;
+    white-space: nowrap;
+    width: 1px; }
+  .listing-manager-table-list td.status-wrapper, .listing-manager-table-list td.package-wrapper {
+    color: rgba(37, 37, 37, 0.7); }
   .listing-manager-table-list .actions-wrapper {
     width: 1px;
     white-space: nowrap; }
   .listing-manager-table-list .button, .listing-manager-table-list .woocommerce .cart .button, .woocommerce .cart .listing-manager-table-list .button, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input {
-    font-size: 13px !important;
+    font-size: 12px !important;
     height: 38px !important;
     line-height: 38px !important;
     padding: 0px 20px !important; }
+    .listing-manager-table-list .button.remove, .listing-manager-table-list .woocommerce .cart input.remove.button, .woocommerce .cart .listing-manager-table-list input.remove.button, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input.remove {
+      background-color: #D80C00; }
+      .listing-manager-table-list .button.remove:hover, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input.remove:hover, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input.remove:hover {
+        background-color: #bf0b00 !important; }
   .listing-manager-table-list .button.remove, .listing-manager-table-list .woocommerce .cart input.remove.button, .woocommerce .cart .listing-manager-table-list input.remove.button, .listing-manager-table-list .woocommerce #review_form #respond .form-submit input.remove, .woocommerce #review_form #respond .form-submit .listing-manager-table-list input.remove {
     color: #fff !important;
     width: auto; }
@@ -3331,6 +3360,41 @@ form.listing-manager-submission-form fieldset legend {
   .main .content table.opening-hours tr td:first-child, .main .content table.opening-hours tr th:first-child {
     padding-left: 0; }
 
+.listing-manager-form-gallery {
+  margin: 0 0 30px 0; }
+  .listing-manager-form-gallery:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.listing-manager-form-gallery-image {
+  float: left;
+  margin: 0 20px 0 0;
+  position: relative; }
+  .listing-manager-form-gallery-image img {
+    display: block;
+    width: 48px; }
+  .listing-manager-form-gallery-image a {
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    .listing-manager-form-gallery-image a:after {
+      -webkit-font-smoothing: antialiased;
+      background-color: #D80C00;
+      border-radius: 50%;
+      content: '\f00d';
+      color: #fff;
+      display: block;
+      font-family: 'FontAwesome';
+      font-size: 10px;
+      height: 18px;
+      letter-spacing: -1px;
+      line-height: 16px;
+      text-align: center;
+      transform: translateX(50%) translateY(-50%);
+      width: 18px; }
+
 /**
  * WooCommerce
  */
@@ -3347,6 +3411,13 @@ form.listing-manager-submission-form fieldset legend {
   color: #252525;
   height: 44px;
   line-height: 44px; }
+
+.woocommerce .quantity .qty {
+  width: 68px; }
+
+.product-quantity {
+  text-align: center;
+  width: 1px; }
 
 .woocommerce-breadcrumb {
   color: rgba(255, 255, 255, 0.7) !important;
@@ -3637,9 +3708,9 @@ form.listing-manager-submission-form fieldset legend {
   background-color: #00823C;
   border: 0;
   border-radius: 3px;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
   color: #fff;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 400;
   padding: 20px 30px !important; }
   .woocommerce .woocommerce-message:before,
   .woocommerce .woocommerce-error:before,
@@ -3797,15 +3868,25 @@ form.listing-manager-submission-form fieldset legend {
   width: 100%; }
   .woocommerce .cart-collaterals .cart_totals h2, .woocommerce-page .cart-collaterals .cart_totals h2 {
     display: none; }
+  .woocommerce .cart-collaterals .cart_totals strong, .woocommerce-page .cart-collaterals .cart_totals strong {
+    font-weight: 500; }
   .woocommerce .cart-collaterals .cart_totals table, .woocommerce-page .cart-collaterals .cart_totals table {
-    border: 1px solid #f4f4f4;
-    border-radius: 0; }
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px dashed rgba(0, 0, 0, 0.06);
+    border-radius: 0;
+    margin: 0; }
+    .woocommerce .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table th {
+      color: rgba(37, 37, 37, 0.5);
+      font-size: 12px;
+      font-weight: 500; }
     .woocommerce .cart-collaterals .cart_totals table th, .woocommerce .cart-collaterals .cart_totals table td, .woocommerce-page .cart-collaterals .cart_totals table th, .woocommerce-page .cart-collaterals .cart_totals table td {
       background-color: transparent;
-      border-color: #f4f4f4;
-      padding-bottom: 34px;
-      padding-top: 34px;
+      border: 0 !important;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.06) !important;
+      padding: 20px 28px;
       vertical-align: middle; }
+    .woocommerce .cart-collaterals .cart_totals table tr:last-child th, .woocommerce .cart-collaterals .cart_totals table tr:last-child td, .woocommerce-page .cart-collaterals .cart_totals table tr:last-child th, .woocommerce-page .cart-collaterals .cart_totals table tr:last-child td {
+      border-bottom: 0 !important; }
 
 /**
  * Table heading
@@ -3827,12 +3908,42 @@ form.listing-manager-submission-form fieldset legend {
   border-top: 1px solid #f4f4f4;
   padding-bottom: 30px;
   padding-top: 30px; }
+  .woocommerce table.shop_table td.product-remove {
+    padding-left: 0;
+    padding-right: 0; }
+    .woocommerce table.shop_table td.product-remove a.remove {
+      color: #D80C00 !important;
+      font-size: 0;
+      font-weight: 400;
+      height: auto;
+      width: auto; }
+      .woocommerce table.shop_table td.product-remove a.remove:hover {
+        background-color: transparent;
+        color: #D80C00 !important; }
+      .woocommerce table.shop_table td.product-remove a.remove:before {
+        content: '\f00d';
+        display: block;
+        font-family: 'FontAwesome';
+        font-size: 12px; }
   .woocommerce table.shop_table td.product-name {
     font-weight: 700; }
     .woocommerce table.shop_table td.product-name a {
-      color: #0EDAC9; }
-  .woocommerce table.shop_table td.product-thumbnail img {
-    width: 60px; }
+      color: #252525;
+      font-weight: 400; }
+    .woocommerce table.shop_table td.product-name p {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 0; }
+      .woocommerce table.shop_table td.product-name p a {
+        color: #0EDAC9;
+        text-decoration: underline; }
+  .woocommerce table.shop_table td.product-thumbnail {
+    padding: 0;
+    width: 1px; }
+    .woocommerce table.shop_table td.product-thumbnail img {
+      display: block;
+      margin: 0;
+      width: 60px; }
 
 /**
  * Table bottom actions wrapper
@@ -3845,30 +3956,23 @@ form.listing-manager-submission-form fieldset legend {
  */
 .woocommerce-cart table.cart td.actions .coupon .input-text {
   font-size: 13px;
-  height: 37px;
+  padding: 0 15px;
   width: 200px; }
 
 /**
  * Table buttons
  */
-.woocommerce .cart .button, .woocommerce .cart input.button, .woocommerce .cart #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .cart input, .woocommerce .cart input.button, .woocommerce .cart #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .cart input {
-  color: #fff;
-  float: right;
-  font-size: 13px !important;
-  height: auto !important;
-  line-height: 1 !important;
-  padding: 12px 25px !important;
-  width: auto; }
-
 /**
  * Proceed to checkout
  */
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
+  -webkit-font-smoothing: initial;
+  float: right;
   font-size: 13px;
-  font-weight: 700;
-  height: auto;
-  line-height: 1;
-  padding: 13px 0 12px 0; }
+  font-weight: 500;
+  line-height: 44px;
+  height: 44px;
+  padding: 0 25px; }
 
 .woocommerce-checkout-review-order-table {
   border: 0; }

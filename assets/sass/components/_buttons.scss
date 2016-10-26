@@ -7,13 +7,14 @@
 .woocommerce a.button,
 .woocommerce button.button,
 .woocommerce input.button,
+.woocommerce input.button:disabled[disabled],
 .button:not(.menu-item), .woocommerce button.button:disabled[disabled] { 
 	background-color: $color-black;
 	border: 0;
 	border-radius: 3px;
 	color: #fff;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	height: 44px;
 	line-height: 44px;
