@@ -30,8 +30,12 @@
     }
 
     .button {
+        border: 0;
         height: auto;
         line-height: 1;
+        margin-top: -9px;
+        margin-bottom: -9px;
+        padding: 13px 25px;
     }
 }
 

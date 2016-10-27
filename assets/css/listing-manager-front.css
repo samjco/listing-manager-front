@@ -514,9 +514,6 @@ h4 {
   .admin-bar .return-back {
     top: 62px; }
 
-.button.listing-manager-listing-add, .woocommerce .cart .listing-manager-listing-add.button, .woocommerce #review_form #respond .form-submit input.listing-manager-listing-add {
-  display: none !important; }
-
 .block-wrapper.image-background {
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
@@ -1815,9 +1812,9 @@ form.listing-manager-submission-form fieldset legend {
         font-size: 22px; } }
   .page-title p {
     color: rgba(37, 37, 37, 0.7);
-    font-size: 16px;
-    line-height: 2;
-    margin: 30px 0 0 0; }
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 20px 0 0 0; }
   .page-title:before {
     background-color: rgba(0, 0, 0, 0.06);
     bottom: 0;
@@ -3738,8 +3735,12 @@ form.listing-manager-submission-form fieldset legend {
   .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-error .cart input.button, .woocommerce .cart .woocommerce-error input.button, .woocommerce .woocommerce-error #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .woocommerce-error input,
   .woocommerce .cart-empty .button, .woocommerce .cart-empty .cart input.button, .woocommerce .cart .cart-empty input.button, .woocommerce .cart-empty #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .cart-empty input,
   .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-info .cart input.button, .woocommerce .cart .woocommerce-info input.button, .woocommerce .woocommerce-info #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .woocommerce-info input {
+    border: 0;
     height: auto;
-    line-height: 1; }
+    line-height: 1;
+    margin-top: -9px;
+    margin-bottom: -9px;
+    padding: 13px 25px; }
 
 .woocommerce .cart-empty,
 .woocommerce .woocommerce-error {
@@ -3830,8 +3831,6 @@ form.listing-manager-submission-form fieldset legend {
         .woocommerce #content div.product .woocommerce-tabs .panel ul.amenities li {
           float: none; } }
       .woocommerce #content div.product .woocommerce-tabs .panel ul.amenities li:before {
-        border: 2px solid rgba(14, 218, 201, 0.15);
-        border-radius: 50%;
         color: #0EDAC9;
         content: '\f00c';
         display: inline-block;

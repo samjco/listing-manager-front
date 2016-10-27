@@ -109,8 +109,6 @@
                 }
 
                 &:before {
-                    border: 2px solid rgba($color-primary, .15);
-                    border-radius: 50%;
                     color: $color-primary;
                     content: '\f00c';
                     display: inline-block;
