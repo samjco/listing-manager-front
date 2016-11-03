@@ -3481,6 +3481,9 @@ form.listing-manager-submission-form fieldset legend {
 .woocommerce ul.products li.product {
   clear: none;
   margin-bottom: 45px; }
+  @media (max-width: 34em) {
+    .woocommerce ul.products li.product {
+      width: 100% !important; } }
   .woocommerce ul.products li.product .product-image-wrapper {
     border-radius: 3px;
     overflow: hidden; }

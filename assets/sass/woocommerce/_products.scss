@@ -44,6 +44,10 @@
 		clear: none;
 		margin-bottom: 45px;
 
+		@media (max-width: $mobile) {
+			width: 100% !important;
+		}
+
 		.product-image-wrapper {
 			border-radius: 3px;
 			overflow: hidden;
