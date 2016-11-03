@@ -26,7 +26,7 @@
 							<?php the_custom_logo(); ?>
 							
 							<?php if ( 'blank' !== get_theme_mod( 'header_textcolor', true ) ) : ?>
-								<a href="<?php echo home_url( '/' ); ?>">
+								<a href="<?php echo home_url( '/' ); ?>" class="site-name">
 									<?php bloginfo( 'name' ); ?>
 								</a>
 							<?php endif; ?>							

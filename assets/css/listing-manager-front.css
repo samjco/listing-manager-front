@@ -1400,6 +1400,10 @@ form.listing-manager-submission-form fieldset legend {
     font-weight: 400;
     text-decoration: none; }
 
+@media (max-width: 48em) {
+  .site-name {
+    display: none; } }
+
 .site-description {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.7);
@@ -1409,6 +1413,9 @@ form.listing-manager-submission-form fieldset legend {
   margin: 0 0 0 20px;
   padding: 0 0 0 20px;
   vertical-align: middle; }
+  @media (max-width: 48em) {
+    .site-description {
+      display: none; } }
 
 .site-navigation {
   float: right; }

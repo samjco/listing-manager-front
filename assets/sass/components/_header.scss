@@ -90,6 +90,12 @@
 	}
 }
 
+.site-name {
+	@media (max-width: $tablet) {
+		display: none;
+	}
+}
+
 .site-description {
 	border-left: 1px solid rgba(#fff, .1);
 	color: rgba(#fff, .7);
@@ -99,6 +105,10 @@
 	margin: 0 0 0 20px;
 	padding: 0 0 0 20px;
 	vertical-align: middle;
+
+	@media (max-width: $tablet) {
+		display: none;
+	}
 }
 
 .site-navigation {
