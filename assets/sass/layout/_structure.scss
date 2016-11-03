@@ -1,4 +1,7 @@
 .page-wrapper {
+	overflow-x: hidden;
+	width: 100%;
+
 	.admin-bar & {
 		border-top: 32px solid transparent;
 

@@ -365,11 +365,14 @@ th {
 /**
  * Layout structure & options
  */
-.admin-bar .page-wrapper {
-  border-top: 32px solid transparent; }
-  @media (max-width: 782px) {
-    .admin-bar .page-wrapper {
-      border-top-width: 46px; } }
+.page-wrapper {
+  overflow-x: hidden;
+  width: 100%; }
+  .admin-bar .page-wrapper {
+    border-top: 32px solid transparent; }
+    @media (max-width: 782px) {
+      .admin-bar .page-wrapper {
+        border-top-width: 46px; } }
 
 .main {
   max-width: 1240px;
