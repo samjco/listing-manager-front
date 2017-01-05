@@ -18,6 +18,9 @@ get_header( 'simple' ); ?>
 	<div class="main-simple">
 		<?php if ( have_posts() ): ?>
 			<?php while( have_posts() ): the_post(); ?>
+                <?php if ( class_exists( 'WooCommerce' ) ) : ?>
+                    <?php wc_print_notices(); ?>
+                <?php endif; ?>
 				<h1><?php the_title(); ?></h1>
 				<?php the_content(); ?>
 			<?php endwhile; ?>
