@@ -7,26 +7,25 @@
 	.content &, .content-top & {
 		margin-bottom: 30px;
 		padding: 25px 25px 5px 25px;
-
-		.form-group {
-			@media (min-width: $tablet) {
-				@include span(3 of 12);
-
-				&:nth-child(4n) {
-					@include last();
-				}
-			}
-
-			@media (max-width: $tablet) {
-				&:last-child {
-					margin-bottom: 20px;
-				}
-			}
-		}
 	}
 
 	.sidebar & {
 		padding: 16px 16px 6px 16px;
+	}
+}
+
+.listing-manager-filter-form-inner {
+  margin: 0 -15px;
+
+	.form-group {
+		box-sizing: border-box;
+		float: left;
+		padding: 0 15px;
+		width: 25%;
+
+		@media (max-width: $tablet) {			
+			width: 100%;
+		}
 	}
 }
 

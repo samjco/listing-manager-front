@@ -1874,19 +1874,19 @@ form.listing-manager-submission-form fieldset legend {
   .content .listing-manager-filter-form, .content-top .listing-manager-filter-form {
     margin-bottom: 30px;
     padding: 25px 25px 5px 25px; }
-    @media (min-width: 48em) {
-      .content .listing-manager-filter-form .form-group, .content-top .listing-manager-filter-form .form-group {
-        width: 23.17073%;
-        float: left;
-        margin-right: 2.43902%; }
-        .content .listing-manager-filter-form .form-group:nth-child(4n), .content-top .listing-manager-filter-form .form-group:nth-child(4n) {
-          float: right;
-          margin-right: 0; } }
-    @media (max-width: 48em) {
-      .content .listing-manager-filter-form .form-group:last-child, .content-top .listing-manager-filter-form .form-group:last-child {
-        margin-bottom: 20px; } }
   .sidebar .listing-manager-filter-form {
     padding: 16px 16px 6px 16px; }
+
+.listing-manager-filter-form-inner {
+  margin: 0 -15px; }
+  .listing-manager-filter-form-inner .form-group {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 15px;
+    width: 25%; }
+    @media (max-width: 48em) {
+      .listing-manager-filter-form-inner .form-group {
+        width: 100%; } }
 
 .hero-wrapper {
   background-color: #3f4348;
