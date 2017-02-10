@@ -374,7 +374,7 @@ add_filter ( 'woocommerce_short_description', 'listing_manager_front_woocommerce
 function listing_manager_front_woocommerce_loop_add_event() {
 	$date = get_post_meta( get_the_ID(), LISTING_MANAGER_LISTING_PREFIX . 'event_date', true );
 
-	if ( ! empty( $date ) ) {
+	if ( ! empty( $date ) && strtotime( $date ) > strtotime( 'now' ) ) {
 		echo '<div class="event-countdown" data-date="' . esc_attr( $date ) . '"></div>';
 	}
 }
@@ -508,7 +508,7 @@ function listing_manager_front_pagination() {
 /**
  * Register plugins
  *
- * @hook tgmpa_register
+ * @see tgmpa_register
  * @return void
  */
 function listing_manager_front_register_required_plugins() {

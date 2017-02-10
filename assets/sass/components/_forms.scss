@@ -134,6 +134,10 @@ form.listing-manager-submission-form fieldset legend {
 	}
 }
 
+.form-group-bundle {
+	@include susy-clearfix();
+}
+
 .input-group {
 	display: table;
 	width: 100%;

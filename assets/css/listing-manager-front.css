@@ -1056,6 +1056,11 @@ form.listing-manager-submission-form fieldset legend {
 .form-group-button .button, .form-group-button .woocommerce .cart .button, .woocommerce .cart .form-group-button .button, .form-group-button .woocommerce #review_form #respond .form-submit input, .woocommerce #review_form #respond .form-submit .form-group-button input {
   width: 100%; }
 
+.form-group-bundle:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
 .input-group {
   display: table;
   width: 100%; }
