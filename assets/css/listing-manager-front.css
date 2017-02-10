@@ -1061,6 +1061,9 @@ form.listing-manager-submission-form fieldset legend {
   display: block;
   clear: both; }
 
+.form-group-bundle .form-group:last-child {
+  margin-bottom: 15px; }
+
 .input-group {
   display: table;
   width: 100%; }
@@ -1079,14 +1082,6 @@ form.listing-manager-submission-form fieldset legend {
   padding-left: 13px;
   padding-right: 13px;
   text-align: center; }
-
-.listing-manager-submission-form-taxonomies .form-group {
-  width: 23.17073%;
-  float: left;
-  margin-right: 2.43902%; }
-  .listing-manager-submission-form-taxonomies .form-group:nth-child(4n) {
-    float: right;
-    margin-right: 0; }
 
 .dropdown-menu {
   background-color: #fff;

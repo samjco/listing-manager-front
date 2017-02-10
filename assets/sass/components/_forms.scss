@@ -136,6 +136,12 @@ form.listing-manager-submission-form fieldset legend {
 
 .form-group-bundle {
 	@include susy-clearfix();
+
+	.form-group {
+		&:last-child {
+			margin-bottom: 15px;
+		}
+	}
 }
 
 .input-group {
@@ -161,16 +167,6 @@ form.listing-manager-submission-form fieldset legend {
 	padding-left: 13px;
 	padding-right: 13px;
 	text-align: center;
-}
-
-.listing-manager-submission-form-taxonomies {
-	.form-group {
-		@include span(3 of 12);
-
-		&:nth-child(4n) {
-			@include last();
-		}
-	}
 }
 
 .dropdown-menu {
